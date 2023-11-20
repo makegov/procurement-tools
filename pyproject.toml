@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "procurement-tools"
+version = "0.0.3"
+description = "Python tools for navigating federal contracting"
+authors = ["V. David Zvenyach <dave@tandemgov.com>"]
+readme = "README.md"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.3"
+
+[tool.pytest.ini_options]
+pythonpath = "src"
+
+[project.urls]
+Homepage = "https://github.com/tandemgov/procurement-tools"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
