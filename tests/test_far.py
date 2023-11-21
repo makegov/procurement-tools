@@ -26,6 +26,13 @@ class MockGithubResponse(object):
             self.text = fp.read()
 
 
+class MockSubpartResponse(object):
+    def __init__(self, status_code: int):
+        self.status_code = status_code
+        with open("./tests/data/far_subpart_17_5.html", "r") as fp:
+            self.text = fp.read()
+
+
 def test_get_section(monkeypatch):
     def mock_get(*args, **kwargs):
         if (
@@ -44,8 +51,36 @@ def test_get_section(monkeypatch):
 
     # Test that it raises an ValueError if you have a fake section
     with pytest.raises(ValueError) as error:
-        fake_res = FAR.get_section("55.101")
+        FAR.get_section("55.101")
 
     assert (
         str(error.value) == "Section '55.101' does not appear to be a valid FAR section"
+    )
+
+
+def test_get_subpart(monkeypatch):
+    def mock_get(*args, **kwargs):
+        if (
+            args[0]
+            == "https://raw.githubusercontent.com/GSA/GSA-Acquisition-FAR/master/html/copypaste-SubParts/FAR_Subpart_17_5.html"
+        ):
+            return MockSubpartResponse(status_code=200)
+        else:
+            return MockSubpartResponse(status_code=404)
+
+    monkeypatch.setattr(requests, "get", mock_get)
+
+    res = FAR.get_subpart("17.5")
+    assert res.title == "Subpart 17.5 - Interagency Acquisitions"
+    assert res.clauses[0] == Clause(
+        number="17.500",
+        title="17.500 Scope of subpart.",
+        body="17.500 Scope of subpart. (a) This subpart prescribes policies and procedures applicable to all interagency acquisitions under any authority, except as provided for in paragraph (c) of this section. In addition to complying with the interagency acquisition policy and procedures in this subpart, nondefense agencies acquiring supplies and services on behalf of the Department of Defense shall also comply with the policy and procedures at subpart 17.7 . (b) This subpart applies to interagency acquisitions, see 2.101 for definition, when- (1) An agency needing supplies or services obtains them using another agency’s contract; or (2) An agency uses another agency to provide acquisition assistance, such as awarding and administering a contract, a task order, or delivery order. (c) This subpart does not apply to- (1) Interagency reimbursable work performed by Federal employees (other than acquisition assistance), or interagency activities where contracting is incidental to the purpose of the transaction; or (2) Orders of $600,000 or less issued against Federal Supply Schedules.",
+    )
+
+    # Test that it raises an ValueError if you have a fake subpart
+    with pytest.raises(ValueError) as error:
+        FAR.get_subpart("17.100")
+    assert (
+        str(error.value) == "Subpart '17_100' does not appear to be a valid FAR subpart"
     )
