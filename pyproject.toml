@@ -1,9 +1,11 @@
 [tool.poetry]
 name = "procurement-tools"
-version = "0.0.3"
+version = "0.1.0"
 description = "Python tools for navigating federal contracting"
 authors = ["V. David Zvenyach <dave@tandemgov.com>"]
 readme = "README.md"
+license = "Apache-2.0"
+keywords = ["packaging", "poetry"]
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.4.3"
@@ -12,7 +14,9 @@ pytest = "^7.4.3"
 pythonpath = "src"
 
 [project.urls]
-Homepage = "https://github.com/tandemgov/procurement-tools"
+homepage = "https://pypi.org/project/procurement-tools/"
+repository = "https://github.com/tandemgov/procurement-tools"
+
 
 [tool.poetry.dependencies]
 python = "^3.11"
