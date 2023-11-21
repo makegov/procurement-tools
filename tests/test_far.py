@@ -19,18 +19,33 @@ def test_clause_url(clause):
     assert clause.url == "https://www.acquisition.gov/far/17.502-1"
 
 
-class MockGithubResponse:
-    # mock json() method always returns a specific testing dictionary
-    status_code = 200
-    with open("./tests/data/far_17.502-1.html", "r") as fp:
-        text = fp.read()
+class MockGithubResponse(object):
+    def __init__(self, status_code: int):
+        self.status_code = status_code
+        with open("./tests/data/far_17.502-1.html", "r") as fp:
+            self.text = fp.read()
 
 
 def test_get_section(monkeypatch):
     def mock_get(*args, **kwargs):
-        return MockGithubResponse()
+        if (
+            args[0]
+            == "https://raw.githubusercontent.com/GSA/GSA-Acquisition-FAR/master/html/copypaste-AllTopic/17.502-1.html"
+        ):
+            return MockGithubResponse(status_code=200)
+        else:
+            return MockGithubResponse(status_code=404)
 
     monkeypatch.setattr(requests, "get", mock_get)
+
     res = FAR.get_section("17.502-1")
     assert res.title == "17.502-1 General."
     assert res.body == SECTION_TEXT
+
+    # Test that it raises an ValueError if you have a fake section
+    with pytest.raises(ValueError) as error:
+        fake_res = FAR.get_section("55.101")
+
+    assert (
+        str(error.value) == "Section '55.101' does not appear to be a valid FAR section"
+    )

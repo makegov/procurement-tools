@@ -9,6 +9,7 @@ keywords = ["packaging", "poetry"]
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.4.3"
+ipdb = "^0.13.13"
 
 [tool.pytest.ini_options]
 pythonpath = "src"

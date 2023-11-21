@@ -19,12 +19,9 @@ class FAR:
         URL = f"https://raw.githubusercontent.com/GSA/GSA-Acquisition-FAR/master/html/copypaste-AllTopic/{section_number}.html"
         res = requests.get(URL)
         if res.status_code == 200:
-            parser = etree.HTMLParser(remove_blank_text=True)
-            tree = html.parse(
-                StringIO(textwrap.shorten(res.text, len(res.text))), parser
+            soup = BeautifulSoup(
+                StringIO(textwrap.shorten(res.text, len(res.text))), "html.parser"
             )
-            body = tree.xpath("//div[contains(@class,'body')]")[0]
-            soup = BeautifulSoup(etree.tostring(body), "html.parser")
             text = "\n".join(
                 [
                     para.get_text(strip=True, separator=" ")
@@ -33,7 +30,11 @@ class FAR:
                 ]
             )
             return Clause(
-                title=tree.xpath("//title")[0].text,
-                number=tree.xpath("//h1")[0].cssselect("span")[0].text,
+                title=soup.title.text,
+                number=soup.find("h1").span.text,
                 body=text,
+            )
+        else:
+            raise ValueError(
+                f"Section '{section_number}' does not appear to be a valid FAR section"
             )
