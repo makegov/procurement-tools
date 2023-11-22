@@ -1,11 +1,14 @@
 [tool.poetry]
 name = "procurement-tools"
-version = "0.1.1"
+version = "0.1.2"
 description = "Python tools for navigating federal contracting"
 authors = ["V. David Zvenyach <dave@tandemgov.com>"]
 readme = "README.md"
 license = "Apache-2.0"
 keywords = ["packaging", "poetry"]
+homepage = "https://pypi.org/project/procurement-tools/"
+repository = "https://github.com/tandemgov/procurement-tools"
+documentation = "https://procurement-tools.readthedocs.io/en/latest/"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.4.3"
@@ -20,10 +23,6 @@ sphinx-rtd-theme = "^1.3.0"
 
 [tool.pytest.ini_options]
 pythonpath = "src"
-
-[project.urls]
-homepage = "https://pypi.org/project/procurement-tools/"
-repository = "https://github.com/tandemgov/procurement-tools"
 
 
 [tool.poetry.dependencies]
