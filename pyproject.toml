@@ -9,6 +9,7 @@ keywords = ["packaging", "poetry"]
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.4.3"
+ipdb = "^0.13.13"
 
 [tool.pytest.ini_options]
 pythonpath = "src"
@@ -20,6 +21,10 @@ repository = "https://github.com/tandemgov/procurement-tools"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+pydantic = "^2.5.1"
+requests = "^2.31.0"
+cssselect = "^1.2.0"
+beautifulsoup4 = "^4.12.2"
 
 [build-system]
 requires = ["poetry-core"]
