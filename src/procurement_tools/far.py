@@ -5,13 +5,10 @@ import requests
 import textwrap
 from typing import List
 import unicodedata
-from lxml import etree, html
-from lxml.html.soupparser import fromstring
 
 """
-
-https://www.acquisition.gov/content/developers-page
-https://github.com/gsa/GSA-Acquisition-FAR/
+Official source of FAR data comes from https://github.com/gsa/GSA-Acquisition-FAR/.
+An alternative is to use the CFR, but for now, we're going to use the GSA Github.
 """
 
 

@@ -23,7 +23,6 @@ repository = "https://github.com/tandemgov/procurement-tools"
 python = "^3.11"
 pydantic = "^2.5.1"
 requests = "^2.31.0"
-lxml = "^4.9.3"
 cssselect = "^1.2.0"
 beautifulsoup4 = "^4.12.2"
 
