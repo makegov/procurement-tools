@@ -6,14 +6,31 @@ import textwrap
 from typing import List
 import unicodedata
 
-"""
-Official source of FAR data comes from https://github.com/gsa/GSA-Acquisition-FAR/.
-An alternative is to use the CFR, but for now, we're going to use the GSA Github.
-"""
-
 
 class FAR:
-    def get_section(section_number: str):
+    """Utilities for accessing the Federal Acquisition Regulation.
+
+    Current functionality is limited to looking up a section or a subpart, but
+    it may eventually do other things. One cool thing is that now you can
+    programmatically access a FAR section as a dict/in json.
+
+    Typical usage::
+
+        from procurement_tools import FAR
+        FAR.get_section("17.502-1")
+
+    Note that the source of FAR data comes from https://github.com/gsa/GSA-Acquisition-FAR/.
+    """
+
+    def get_section(section_number: str) -> Clause:
+        """Lookup a FAR section.
+
+        Args:
+            section_number: A FAR section number (e.g., "17.502-1")
+
+        Returns:
+            A FAR Clause.
+        """
         URL = f"https://raw.githubusercontent.com/GSA/GSA-Acquisition-FAR/master/html/copypaste-AllTopic/{section_number}.html"
         res = requests.get(URL)
         if res.status_code == 200:
@@ -37,7 +54,16 @@ class FAR:
                 f"Section '{section_number}' does not appear to be a valid FAR section"
             )
 
-    def get_subpart(subpart_number: str):
+    def get_subpart(subpart_number: str) -> Subpart:
+        """Lookup a FAR subpart.
+
+        Args:
+            subpart_number: A FAR subpart number (e.g. "17.5").
+
+        Returns:
+            A FAR Subpart.
+        """
+
         def parse_clauses(soup: BeautifulSoup) -> List[Clause]:
             results = []
             sections = soup.find_all("article", class_="topic")
