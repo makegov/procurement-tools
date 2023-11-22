@@ -2,11 +2,28 @@ import re
 
 
 class UEI:
+    """Utilities for working with Unique Entity Identifiers (UEIs).
+
+    Current functionality is limited to validating a UEI.
+
+    Typical usage::
+
+        from procurement_tools import UEI
+        UEI.is_valid("J7M9HPTGJ1S9")
+    """
+
     @classmethod
     def is_valid(cls, uei: str) -> bool:
-        """
-        Implementation of UEI standard described here: https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services/integrated-award-environment-iae/iae-systems-information-kit/uei-technical-specifications-and-api-information
+        """Checks validity of a UEI
+
+        This implements the UEI standard described here: https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services/integrated-award-environment-iae/iae-systems-information-kit/uei-technical-specifications-and-api-information
         Credit to GSA TTS's original implementation here: https://github.com/GSA-TTS/uei-js
+
+        Args:
+            uei: A UEI (e.g., "J7M9HPTGJ1S9")
+
+        Returns:
+            True or False.
         """
 
         def _check_digit(uei: str) -> bool:
