@@ -1,6 +1,6 @@
 # procurement-tools
 
-![PyPI version](https://img.shields.io/pypi/v/procurement-tools.svg)
+[![PyPI version](https://img.shields.io/pypi/v/procurement-tools.svg)](https://pypi.org/project/procurement-tools/)
 
 A handy collection of python utilities and tools to navigate federal contracting.
 
