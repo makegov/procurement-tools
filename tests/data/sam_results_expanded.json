@@ -1,0 +1,101 @@
+{
+    "totalRecords": 1,
+    "entityData": [
+        {
+            "entityRegistration": {
+                "samRegistered": "Yes",
+                "ueiSAM": "XRVFU3YRA2U5",
+                "entityEFTIndicator": null,
+                "cageCode": null,
+                "dodaac": null,
+                "legalBusinessName": "DR. D.G. JAMES AND DR. C.L. ENYART, OPTOMETRISTS, S.C.",
+                "dbaName": "JAMES & ENYART",
+                "purposeOfRegistrationCode": "Z1",
+                "purposeOfRegistrationDesc": "Federal Assistance Awards",
+                "registrationStatus": "Active",
+                "evsSource": "E&Y",
+                "registrationDate": "2023-10-13",
+                "lastUpdateDate": "2023-10-19",
+                "registrationExpirationDate": "2024-10-12",
+                "activationDate": "2023-10-16",
+                "ueiStatus": "Active",
+                "ueiExpirationDate": null,
+                "ueiCreationDate": "2023-10-11",
+                "publicDisplayFlag": "Y",
+                "exclusionStatusFlag": "N",
+                "exclusionURL": null,
+                "dnbOpenData": null
+            },
+            "coreData": {
+                "entityInformation": {
+                    "entityURL": null,
+                    "entityDivisionName": null,
+                    "entityDivisionNumber": null,
+                    "entityStartDate": "1972-12-29",
+                    "fiscalYearEndCloseDate": "12/23",
+                    "submissionDate": "2023-10-13"
+                },
+                "physicalAddress": {
+                    "addressLine1": "185 W NETHERWOOD ST",
+                    "addressLine2": null,
+                    "city": "OREGON",
+                    "stateOrProvinceCode": "WI",
+                    "zipCode": "53575",
+                    "zipCodePlus4": "1100",
+                    "countryCode": "USA"
+                },
+                "mailingAddress": {
+                    "addressLine1": "185 W NETHERWOOD ST",
+                    "addressLine2": null,
+                    "city": "OREGON",
+                    "stateOrProvinceCode": "WI",
+                    "zipCode": "53575",
+                    "zipCodePlus4": "1100",
+                    "countryCode": "USA"
+                },
+                "congressionalDistrict": "02",
+                "generalInformation": {
+                    "entityStructureCode": "8H",
+                    "entityStructureDesc": "Corporate Entity (Tax Exempt)",
+                    "entityTypeCode": "F",
+                    "entityTypeDesc": "Business or Organization",
+                    "profitStructureCode": "2X",
+                    "profitStructureDesc": "For Profit Organization",
+                    "organizationStructureCode": null,
+                    "organizationStructureDesc": null,
+                    "stateOfIncorporationCode": "WI",
+                    "stateOfIncorporationDesc": "WISCONSIN",
+                    "countryOfIncorporationCode": "USA",
+                    "countryOfIncorporationDesc": "UNITED STATES"
+                },
+                "businessTypes": {
+                    "businessTypeList": [
+                        {
+                            "businessTypeCode": "2X",
+                            "businessTypeDesc": "For Profit Organization"
+                        },
+                        {
+                            "businessTypeCode": "F",
+                            "businessTypeDesc": "Business or Organization"
+                        }
+                    ],
+                    "sbaBusinessTypeList": [
+                        {
+                            "sbaBusinessTypeCode": null,
+                            "sbaBusinessTypeDesc": null,
+                            "certificationEntryDate": null,
+                            "certificationExitDate": null
+                        }
+                    ]
+                },
+                "financialInformation": {
+                    "creditCardUsage": "Y",
+                    "debtSubjectToOffset": "N"
+                }
+            }
+        }
+    ],
+    "links": {
+        "selfLink": "https://api.sam.gov/entity-information/v3/entities?api_key=REPLACE_WITH_API_KEY&ueiSAM=XRVFU3YRA2U5&includeSections=entityRegistration%2CcoreData&page=0&size=10"
+    }
+}

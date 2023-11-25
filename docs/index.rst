@@ -8,11 +8,30 @@ Installation
 
    pip install procurement-tools
 
-API Documentation
------------------
+Example Usage
+-------------
+.. code-block:: python
 
-The current functionality is limited to utilities related to the FAR, UEI, and
-USASpending.gov.
+   from procurement_tools import FAR, UEI, USASpending
+   print(UEI.is_valid("J7M9HPTGJ1S9"))
+   # True
 
-.. automodule:: procurement_tools
-    :members:
+   print(USASpending.get_usaspending_URL("J7M9HPTGJ1S9"))
+   # 'https://www.usaspending.gov/recipient/bf1220c1-2373-042a-e8e1-33d5a29639d0-P/latest'
+
+   print(FAR.get_section("17.502-2"))
+   # Returns a pydantic model with the title, section number, url, and text of the section
+
+   from procurement_tools import EntityRequestParams, get_entity
+   res = get_entity(EntityRequestParams(ueiSAM="XRVFU3YRA2U5"))
+   print(res)
+   # Returns a pydantic model with the latest SAM data for a given Entity
+
+Contents
+--------
+
+.. toctree::
+   :maxdepth: 1
+
+   api
+   entity

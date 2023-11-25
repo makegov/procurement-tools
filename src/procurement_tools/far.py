@@ -22,7 +22,8 @@ class FAR:
     Note that the source of FAR data comes from https://github.com/gsa/GSA-Acquisition-FAR/.
     """
 
-    def get_section(section_number: str) -> Clause:
+    @classmethod
+    def get_section(cls, section_number: str) -> Clause:
         """Lookup a FAR section.
 
         Args:
@@ -54,7 +55,8 @@ class FAR:
                 f"Section '{section_number}' does not appear to be a valid FAR section"
             )
 
-    def get_subpart(subpart_number: str) -> Subpart:
+    @classmethod
+    def get_subpart(cls, subpart_number: str) -> Subpart:
         """Lookup a FAR subpart.
 
         Args:

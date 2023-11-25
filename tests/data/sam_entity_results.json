@@ -1,0 +1,34 @@
+{
+    "totalRecords": 1,
+    "entityData": [
+        {
+            "entityRegistration": {
+                "samRegistered": "Yes",
+                "ueiSAM": "XRVFU3YRA2U5",
+                "entityEFTIndicator": null,
+                "cageCode": null,
+                "dodaac": null,
+                "legalBusinessName": "DR. D.G. JAMES AND DR. C.L. ENYART, OPTOMETRISTS, S.C.",
+                "dbaName": "JAMES & ENYART",
+                "purposeOfRegistrationCode": "Z1",
+                "purposeOfRegistrationDesc": "Federal Assistance Awards",
+                "registrationStatus": "Active",
+                "evsSource": "E&Y",
+                "registrationDate": "2023-10-13",
+                "lastUpdateDate": "2023-10-19",
+                "registrationExpirationDate": "2024-10-12",
+                "activationDate": "2023-10-16",
+                "ueiStatus": "Active",
+                "ueiExpirationDate": null,
+                "ueiCreationDate": "2023-10-11",
+                "publicDisplayFlag": "Y",
+                "exclusionStatusFlag": "N",
+                "exclusionURL": null,
+                "dnbOpenData": null
+            }
+        }
+    ],
+    "links": {
+        "selfLink": "https://api.sam.gov/entity-information/v3/entities?api_key=REPLACE_WITH_API_KEY&includeSections=entityRegistration&ueiSAM=XRVFU3YRA2U5&page=0&size=10"
+    }
+}

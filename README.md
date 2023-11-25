@@ -21,6 +21,15 @@ print(PeriodicTable.get_random_innovation())
 # Returns a dict with an innovation from the FAI Periodic Table of Acquisition Innovations
 ```
 
+Additionally, we have the beginning of a SAM API client:
+
+```python
+from procurement_tools import EntityRequestParams, get_entity
+res = get_entity(EntityRequestParams(ueiSAM="XRVFU3YRA2U5"))
+print(res)
+# Returns a pydantic model with the latest SAM data for a given Entity
+```
+
 ## Installation
 
 ```sh
