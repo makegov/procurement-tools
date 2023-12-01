@@ -7,7 +7,7 @@ A handy collection of python utilities and tools to navigate federal contracting
 ## Usage
 
 ```py
-from procurement_tools import FAR, UEI, USASpending
+from procurement_tools import FAR, UEI, USASpending, PeriodicTable
 print(UEI.is_valid("J7M9HPTGJ1S9"))
 # True
 
@@ -16,6 +16,9 @@ print(USASpending.get_usaspending_URL("J7M9HPTGJ1S9"))
 
 print(FAR.get_section("17.502-2"))
 # Returns a pydantic model with the title, section number, url, and text of the section
+
+print(PeriodicTable.get_random_innovation())
+# Returns a dict with an innovation from the FAI Periodic Table of Acquisition Innovations
 ```
 
 ## Installation
