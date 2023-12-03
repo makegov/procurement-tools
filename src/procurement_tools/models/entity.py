@@ -1,6 +1,7 @@
 from pydantic import BaseModel, ConfigDict, Field, HttpUrl
 from pydantic.alias_generators import to_camel
 from typing import Literal, List, Optional
+from .sam_entity.far_answer import FARAnswer
 
 
 class BusinessType(BaseModel):
@@ -13,6 +14,8 @@ class BusinessType(BaseModel):
 
 
 class SBABusinessType(BaseModel):
+    """SBA certifications (e.g., 8(a))"""
+
     model_config = ConfigDict(alias_generator=to_camel)
 
     sba_business_type_code: Optional[str]
@@ -120,8 +123,177 @@ class EntityData(BaseModel):
     financial_information: FinancialInformation
 
 
+class Naics(BaseModel):
+    model_config = ConfigDict(alias_generator=to_camel)
+
+    naics_code: str
+    naics_description: str
+    sba_small_business: Optional[str]
+    naics_exception: Optional[str]
+
+
+class ProductServiceCode(BaseModel):
+    model_config = ConfigDict(alias_generator=to_camel)
+
+    psc_code: Optional[str]
+    psc_description: Optional[str]
+
+
+class GoodsAndServices(BaseModel):
+    model_config = ConfigDict(alias_generator=to_camel)
+
+    primary_naics: Optional[str]
+    naics_list: List[Naics]
+    psc_list: List[ProductServiceCode]
+
+
+class GeographicalAreaServed(BaseModel):
+    model_config = ConfigDict(alias_generator=to_camel)
+
+    geographical_area_served_state_code: Optional[str]
+    geographical_area_served_state_name: Optional[str]
+    geographical_area_served_county_code: Optional[str]
+    geographical_area_served_county_name: Optional[str]
+    geographical_area_servedmetropolitan_statistical_area_code: Optional[str]
+    geographical_area_servedmetropolitan_statistical_area_name: Optional[str]
+
+
+class DisasterReliefData(BaseModel):
+    model_config = ConfigDict(alias_generator=to_camel)
+
+    disaster_registry_flag: str
+    bonding_flag: str
+    geographical_area_served: List[GeographicalAreaServed]
+
+
+class EdiInformation(BaseModel):
+    model_config = ConfigDict(alias_generator=to_camel)
+
+    edi_information_flag: str
+
+
+class AssertionData(BaseModel):
+    model_config = ConfigDict(alias_generator=to_camel)
+
+    goods_and_services: GoodsAndServices
+    disaster_relief_data: DisasterReliefData
+    edi_information: EdiInformation
+
+
+class FARResponse(BaseModel):
+    model_config = ConfigDict(alias_generator=to_camel)
+
+    provision_id: str
+    list_of_answers: List[FARAnswer]
+
+
+class Certifications(BaseModel):
+    fARResponses: List[FARResponse]
+    dFARResponses: List[FARResponse]
+
+
+class FinancialAssistanceCertifications(BaseModel):
+    model_config = ConfigDict(alias_generator=to_camel)
+
+    grants_certification_status: Optional[str]
+    grants_certifying_response: Optional[str]
+    certifier_first_name: Optional[str]
+    certifier_last_name: Optional[str]
+    certifier_middle_initial: Optional[str]
+
+
+class PDFLinks(BaseModel):
+    far_pdf: str = Field(alias="farPDF")
+    far_and_dfars_pdf: str = Field(alias="farAndDfarsPDF")
+    architect_engineering_pdf: Optional[str] = Field(alias="architectEngineeringPDF")
+    financial_assistance_certifications_pdf: Optional[str] = Field(
+        alias="financialAssistanceCertificationsPDF"
+    )
+
+
+class Qualifications(BaseModel):
+    model_config = ConfigDict(alias_generator=to_camel)
+
+    architect_engineer_responses: Optional[FARResponse]
+
+
+class RepsAndCerts(BaseModel):
+    certifications: Certifications
+    qualifications: Qualifications
+    financial_assistance_certifications: FinancialAssistanceCertifications = Field(
+        alias="financialAssistanceCertifications"
+    )
+    pdf_links: PDFLinks = Field(alias="pdfLinks")
+
+
+class EntitySummary(Address):
+    model_config = ConfigDict(alias_generator=to_camel)
+
+    uei: str = Field(default=None, alias="ueiSAM")
+    cage_code: str
+    legal_business_name: str
+
+
+class ProceedingsData(BaseModel):
+    model_config = ConfigDict(alias_generator=to_camel)
+
+    proceedings_question1: Optional[str]
+    proceedings_question2: Optional[str]
+    proceedings_question3: Optional[str]
+    proceedings_record_count: Optional[str]
+
+
+class IntegrityInformation(BaseModel):
+    model_config = ConfigDict(alias_generator=to_camel)
+
+    entity_summary: Optional[EntitySummary]
+    proceedings_data: Optional[ProceedingsData]
+    responsibility_information_count: str
+    responsibility_information_list: str
+    corporate_relationships: str
+
+
+class POC(BaseModel):
+    model_config = ConfigDict(alias_generator=to_camel)
+
+    first_name: Optional[str]
+    middle_initial: Optional[str]
+    last_name: Optional[str]
+    title: Optional[str]
+    address_line1: Optional[str]
+    address_line2: Optional[str]
+    city: Optional[str]
+    state_or_province_code: Optional[str]
+    zip_code: Optional[str]
+    zip_code_plus4: Optional[str]
+    country_code: Optional[str]
+
+
+class POCData(BaseModel):
+    model_config = ConfigDict(alias_generator=to_camel)
+
+    government_business_POC: Optional[POC] = Field(alias="governmentBusinessPOC")
+    electronic_business_POC: Optional[POC] = Field(alias="electronicBusinessPOC")
+    government_business_alternate_POC: Optional[POC] = Field(
+        alias="governmentBusinessAlternatePOC"
+    )
+    electronic_business_alternate_POC: Optional[POC] = Field(
+        alias="electronicBusinessAlternatePOC"
+    )
+    past_performance_POC: Optional[POC] = Field(alias="pastPerformancePOC")
+    past_performance_alternate_POC: Optional[POC] = Field(
+        alias="pastPerformanceAlternatePOC"
+    )
+
+
 class Entity(BaseModel):
     model_config = ConfigDict(populate_by_name=True)
 
     registration: Registration = Field(default=None, alias="entityRegistration")
     core_data: Optional[EntityData] = Field(default=None, alias="coreData")
+    integrity_information: Optional[IntegrityInformation] = Field(
+        default=None, alias="integrityInformation"
+    )
+    assertions: Optional[AssertionData] = Field(default=None, alias="assertions")
+    reps_and_certs: Optional[RepsAndCerts] = Field(default=None, alias="repsAndCerts")
+    points_of_contact: Optional[POCData] = Field(default=None, alias="pointsOfContact")

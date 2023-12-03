@@ -1,7 +1,7 @@
 from .models.entity import Entity
 from .uei import UEI
 import keyring
-from pydantic import BaseModel, Field, field_validator
+from pydantic import BaseModel, Field, field_validator, ValidationError
 import requests
 from urllib.parse import urlencode
 
@@ -15,7 +15,7 @@ class EntityRequestParams(BaseModel):
 
     ueiSAM: str = None
     naicsCode: str = None
-    includeSections: str = Field(default="entityRegistration")
+    includeSections: str = Field(default="All")
 
     @field_validator("ueiSAM")
     @classmethod
@@ -25,17 +25,26 @@ class EntityRequestParams(BaseModel):
         raise ValueError("UEI is not valid!")
 
 
-def get_entity(params: EntityRequestParams) -> Entity:
+def get_entity(params: dict) -> Entity:
     """Get a pydantic model of an Entity from the `SAM API <https://open.gsa.gov/api/entity-api/>`_.
 
+    Typical usage::
+
+        from procurement_tools import get_entity
+        res = get_entity({ueiSAM:"XRVFU3YRA2U5"})
+
     Args:
-        params: An EntityRequestParams object
+        params: An dict of EntityRequestParams
 
     Returns:
         A pydantic Entity modle
     """
+    try:
+        request_params = EntityRequestParams(**params).model_dump(exclude_none=True)
+    except ValidationError:
+        raise
 
-    param_str = urlencode(params.model_dump(exclude_none=True))
+    param_str = urlencode(request_params)
     url = f"{BASE_URL}&{param_str}"
     res = requests.get(url)
     data = res.json()

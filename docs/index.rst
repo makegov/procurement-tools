@@ -6,6 +6,8 @@ A handy collection of python utilities and tools to navigate federal contracting
 Installation
 ------------
 
+.. code-block:: sh
+
    pip install procurement-tools
 
 Example Usage
@@ -33,5 +35,6 @@ Contents
 .. toctree::
    :maxdepth: 1
 
+   roadmap
    api
    entity
