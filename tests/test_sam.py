@@ -39,6 +39,13 @@ class MockSAMFullEntityResponse:
         return data
 
 
+class MockSAMIntegrityEntityResponse:
+    def json():
+        with open("./tests/data/sam_results_integrity.json", "r") as fp:
+            data = json.load(fp)
+        return data
+
+
 def test_get_entity(monkeypatch):
     def mock_get(*args, **kwargs):
         return MockSAMEntityResponse
@@ -77,4 +84,24 @@ def test_get_entity_full(monkeypatch):
     assert (
         res.reps_and_certs.pdf_links.far_pdf
         == "https://api.sam.gov/SAM/file-download?api_key=REPLACE_WITH_API_KEY&pdfType=1&ueiSAM=ZMXAHH8M8VL8"
+    )
+
+
+def test_get_entity_integrity(monkeypatch):
+    def mock_get(*args, **kwargs):
+        return MockSAMIntegrityEntityResponse
+
+    monkeypatch.setattr(requests, "get", mock_get)
+    res = get_entity(dict(ueiSAM="SQ64PQQWATX8"))
+    assert res.registration.legal_name == "MAGNUM OPUS TECHNOLOGIES, INC"
+    assert res.core_data.business_types.businessTypeList[0].business_type_code == "23"
+    assert res.assertions.goods_and_services.naics_list[0].naics_code == "561110"
+    assert (
+        res.reps_and_certs.pdf_links.far_pdf
+        == "https://api.sam.gov/SAM/file-download?api_key=REPLACE_WITH_API_KEY&pdfType=1&ueiSAM=SQ64PQQWATX8"
+    )
+    assert res.integrity_information.responsibility_information_count == 1
+    assert (
+        res.integrity_information.responsibility_information_list[0].attachment
+        == "https://iae-prd-fapiis-attachments.s3.amazonaws.com/68479.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20231203T134518Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=AKIAY3LPYEEXT7JTNBPZ%2F20231203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=cab0834a1afc129cb9bf632c74f166ba56203debb6c8fc4971096481e1137421"
     )

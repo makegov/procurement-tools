@@ -63,7 +63,7 @@ class Address(BaseModel):
     city: str
     state_or_province_code: str
     zip_code: str
-    zip_code_plus4: str
+    zip_code_plus4: Optional[str]
     country_code: str
 
 
@@ -226,31 +226,25 @@ class RepsAndCerts(BaseModel):
     pdf_links: PDFLinks = Field(alias="pdfLinks")
 
 
-class EntitySummary(Address):
+class EntitySummary(BaseModel):
     model_config = ConfigDict(alias_generator=to_camel)
 
     uei: str = Field(default=None, alias="ueiSAM")
     cage_code: str
     legal_business_name: str
+    physical_address: Address
 
 
-class ProceedingsData(BaseModel):
+class Proceeding(BaseModel):
     model_config = ConfigDict(alias_generator=to_camel)
 
-    proceedings_question1: Optional[str]
-    proceedings_question2: Optional[str]
-    proceedings_question3: Optional[str]
-    proceedings_record_count: Optional[str]
-
-
-class IntegrityInformation(BaseModel):
-    model_config = ConfigDict(alias_generator=to_camel)
-
-    entity_summary: Optional[EntitySummary]
-    proceedings_data: Optional[ProceedingsData]
-    responsibility_information_count: str
-    responsibility_information_list: str
-    corporate_relationships: str
+    proceeding_date: Optional[str]
+    instrument_number: Optional[str]
+    instrument: Optional[str]
+    proceeding_state_code: Optional[str]
+    proceeding_type: Optional[str]
+    disposition: Optional[str]
+    proceeding_description: Optional[str]
 
 
 class POC(BaseModel):
@@ -267,6 +261,59 @@ class POC(BaseModel):
     zip_code: Optional[str]
     zip_code_plus4: Optional[str]
     country_code: Optional[str]
+
+
+class ProceedingsPointsOfContact(BaseModel):
+    proceedingsPOC: Optional[POC]
+    proceedingsAlternatePOC: Optional[POC]
+
+
+class ProceedingsData(BaseModel):
+    model_config = ConfigDict(alias_generator=to_camel)
+
+    proceedings_question1: Optional[str]
+    proceedings_question2: Optional[str]
+    proceedings_question3: Optional[str]
+    proceedings_record_count: Optional[str] | Optional[int]
+    list_of_proceedings: List[Proceeding]
+    proceedings_points_of_contact: Optional[ProceedingsPointsOfContact]
+
+
+class ResponsibilityInformation(BaseModel):
+    model_config = ConfigDict(alias_generator=to_camel)
+
+    record_type: Optional[str]
+    record_type_desc: Optional[str]
+    record_date: Optional[str]
+    procurement_id_or_federal_assistance_id: Optional[str]
+    reference_idv_piid: Optional[str]
+    attachment: Optional[str]
+
+
+class CorporateIntegrity(BaseModel):
+    model_config = ConfigDict(alias_generator=to_camel)
+
+    legal_business_name: Optional[str]
+    cage_code: Optional[str]
+    integrity_records: Optional[str]
+
+
+class CorporateRelationships(BaseModel):
+    model_config = ConfigDict(alias_generator=to_camel)
+
+    highest_owner: Optional[CorporateIntegrity]
+    immediate_owner: Optional[CorporateIntegrity]
+    predecessors_list: Optional[List[CorporateIntegrity]]
+
+
+class IntegrityInformation(BaseModel):
+    model_config = ConfigDict(alias_generator=to_camel)
+
+    entity_summary: Optional[EntitySummary]
+    proceedings_data: Optional[ProceedingsData]
+    responsibility_information_count: str | int
+    responsibility_information_list: Optional[List[ResponsibilityInformation]]
+    corporate_relationships: Optional[CorporateRelationships]
 
 
 class POCData(BaseModel):
