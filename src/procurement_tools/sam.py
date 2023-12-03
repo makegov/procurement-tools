@@ -34,7 +34,9 @@ def get_entity(params: dict) -> Entity:
         res = get_entity({ueiSAM:"XRVFU3YRA2U5"})
 
     Args:
-        params: An dict of EntityRequestParams
+        params: A dict for the request parameters to the SAM API. As currently implemented, we use \
+        EntityRequestParams to check whether the parameters are valid. This is limited to `ueiSAM` and \
+        `includeSections`
 
     Returns:
         A pydantic Entity modle
