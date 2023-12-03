@@ -4,7 +4,17 @@
 
 A handy collection of python utilities and tools to navigate federal contracting.
 
+## Features
+
+- [x] UEI validation
+- [x] Get a URL for an entity from USASpending
+- [x] Lookup a FAR provision by citation
+- [x] Get entity information from the SAM entity
+- [x] Access innovations from the Periodic Table of Acquisition Innovations
+
 ## Usage
+
+For full documentation, head to [the docs](https://procurement-tools.readthedocs.io/en/latest/).
 
 ```py
 from procurement_tools import FAR, UEI, USASpending, PeriodicTable
@@ -19,6 +29,15 @@ print(FAR.get_section("17.502-2"))
 
 print(PeriodicTable.get_random_innovation())
 # Returns a dict with an innovation from the FAI Periodic Table of Acquisition Innovations
+```
+
+Additionally, we have the beginning of a SAM API client:
+
+```python
+from procurement_tools import get_entity
+res = get_entity({ueiSAM:"XRVFU3YRA2U5"})
+print(res)
+# Returns a pydantic model with the latest SAM data for a given Entity
 ```
 
 ## Installation

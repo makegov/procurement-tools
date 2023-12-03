@@ -7,6 +7,7 @@ clean:
     @echo "🧹 Cleaned built scripts and caches"
 
 docs:
+    @just clean
     @cd docs && make html
     @python -m http.server -d docs/_build/html
 
