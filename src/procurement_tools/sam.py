@@ -1,12 +1,14 @@
 from .models.entity import Entity
 from .uei import UEI
 import keyring
+import os
 from pydantic import BaseModel, Field, field_validator, ValidationError
 import requests
 from urllib.parse import urlencode
 
-
-API_KEY = keyring.get_password("system", "sam_api_key")
+API_KEY = os.environ.get("SAM_API_KEY")
+if not API_KEY:
+    API_KEY = keyring.get_password("system", "sam_api_key")
 BASE_URL = f"https://api.sam.gov/entity-information/v3/entities?api_key={API_KEY}"
 
 
