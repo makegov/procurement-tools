@@ -37,6 +37,6 @@ jobs:
         id: cache-deps
         uses: actions/cache@v3
         with:
-          path: ~/.tox
+          path: .tox
           key: ${{ matrix.python-version }}-${{ hashFiles('pyproject.toml', 'setup.cfg') }}
       - run: tox -e ${{ matrix.python-version }}
