@@ -1,6 +1,6 @@
 from pydantic import BaseModel, ConfigDict, Field, HttpUrl
 from pydantic.alias_generators import to_camel
-from typing import Literal, List, Optional
+from typing import Literal, List, Optional, Union
 from .sam_entity.far_answer import FARAnswer
 
 
@@ -274,7 +274,7 @@ class ProceedingsData(BaseModel):
     proceedings_question1: Optional[str]
     proceedings_question2: Optional[str]
     proceedings_question3: Optional[str]
-    proceedings_record_count: Optional[str] | Optional[int]
+    proceedings_record_count: Optional[Union[str, int]]
     list_of_proceedings: List[Proceeding]
     proceedings_points_of_contact: Optional[ProceedingsPointsOfContact]
 
@@ -311,7 +311,7 @@ class IntegrityInformation(BaseModel):
 
     entity_summary: Optional[EntitySummary]
     proceedings_data: Optional[ProceedingsData]
-    responsibility_information_count: str | int
+    responsibility_information_count: Union[str, int]
     responsibility_information_list: Optional[List[ResponsibilityInformation]]
     corporate_relationships: Optional[CorporateRelationships]
 
