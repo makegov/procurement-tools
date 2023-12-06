@@ -32,13 +32,11 @@ jobs:
           version: 1.6.1
           virtualenvs-create: true
           virtualenvs-in-project: true
+      - run: pip install tox
       - name: cache deps
         id: cache-deps
         uses: actions/cache@v3
         with:
           path: .tox
           key: pydeps-${{ matrix.python-version }}-${{ hashFiles('pyproject.toml', 'setup.cfg') }}
-      - run: poetry install --no-interaction --no-root --with test
-        if: steps.cache-deps.outputs.cache-hit != 'true'
-      - run: poetry install --no-interaction --with test
-      - run: poetry run tox -e ${{ matrix.python-version }}
+      - run: tox -e ${{ matrix.python-version }}
