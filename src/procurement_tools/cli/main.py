@@ -1,6 +1,5 @@
 import json
 from procurement_tools import FAR, USASpending, get_entity
-from rich import print
 import typer
 from typing_extensions import Annotated
 
