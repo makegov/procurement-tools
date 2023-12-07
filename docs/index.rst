@@ -25,9 +25,16 @@ Example Usage
    # Returns a pydantic model with the title, section number, url, and text of the section
 
    from procurement_tools import get_entity
-   res = get_entity({ueiSAM="XRVFU3YRA2U5"})
+   res = get_entity({"ueiSAM":"XRVFU3YRA2U5"})
    print(res)
    # Returns a pydantic model with the latest SAM data for a given Entity
+
+It also comes with a CLI (though the *design* of CLI is still very much conceptual). Right now you can, e.g., run the following command:
+
+.. code-block:: sh
+
+   fargo sam XRVFU3YRA2U5
+   # Get an entity's details dumped into a JSON object
 
 Contents
 --------
@@ -37,4 +44,6 @@ Contents
 
    roadmap
    api
+   cli
    entity
+   CHANGELOG

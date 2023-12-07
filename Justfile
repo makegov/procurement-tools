@@ -14,3 +14,6 @@ docs:
 publish:
     @poetry build
     @poetry publish
+
+test:
+    @tox

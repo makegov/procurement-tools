@@ -8,6 +8,7 @@ A handy collection of python utilities and tools to navigate federal contracting
 
 - [x] UEI validation
 - [x] Get a URL for an entity from USASpending
+- [x] Get recent award data for an entity from USASpending
 - [x] Lookup a FAR provision by citation
 - [x] Get entity information from the SAM entity
 - [x] Access innovations from the Periodic Table of Acquisition Innovations
@@ -39,6 +40,83 @@ res = get_entity({"ueiSAM":"XRVFU3YRA2U5"})
 print(res)
 # Returns a pydantic model with the latest SAM data for a given Entity
 ```
+
+## CLI Usage
+
+# `fargo`
+
+**Usage**:
+
+```console
+$ fargo [OPTIONS] COMMAND [ARGS]...
+```
+
+**Options**:
+
+- `--install-completion`: Install completion for the current shell.
+- `--show-completion`: Show completion for the current shell, to copy it or customize the installation.
+- `--help`: Show this message and exit.
+
+**Commands**:
+
+- `far`: Get a provision of the FAR
+- `sam`: Get a SAM entity's JSON data by providing...
+- `usaspending`: Get JSON data about an entity from...
+
+## `fargo far`
+
+Get a provision of the FAR
+
+**Usage**:
+
+```console
+$ fargo far [OPTIONS] SECTION_NUMBER
+```
+
+**Arguments**:
+
+- `SECTION_NUMBER`: [required]
+
+**Options**:
+
+- `--help`: Show this message and exit.
+
+## `fargo sam`
+
+Get a SAM entity's JSON data by providing a UEI
+
+**Usage**:
+
+```console
+$ fargo sam [OPTIONS] UEI
+```
+
+**Arguments**:
+
+- `UEI`: [required]
+
+**Options**:
+
+- `--help`: Show this message and exit.
+
+## `fargo usaspending`
+
+Get JSON data about an entity from USASpending by providing a UEI
+
+**Usage**:
+
+```console
+$ fargo usaspending [OPTIONS] UEI
+```
+
+**Arguments**:
+
+- `UEI`: [required]
+
+**Options**:
+
+- `--awards / --no-awards`: [default: no-awards]
+- `--help`: Show this message and exit.
 
 ## Installation
 
