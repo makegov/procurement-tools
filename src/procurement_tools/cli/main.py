@@ -28,8 +28,7 @@ def usaspending(
     awards: Annotated[
         bool,
         typer.Option(
-            default=False,
-            help="Get the latest awards for entity. If false, then gets the entity's profile data",
+            help="Get the latest awards for entity. If false, then gets the entity's profile data"
         ),
     ] = False,
 ):
