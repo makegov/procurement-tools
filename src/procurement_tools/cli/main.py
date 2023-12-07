@@ -1,9 +1,18 @@
 import json
-from procurement_tools import USASpending, get_entity
+from procurement_tools import FAR, USASpending, get_entity
+from rich import print
 import typer
 from typing_extensions import Annotated
 
 app = typer.Typer()
+
+
+@app.command()
+def far(section_number: str):
+    """Get a provision of the FAR"""
+    res = FAR.get_section(section_number)
+    text = res.title + "\n" + res.body + "\n\nURL: " + res.url
+    print(text)
 
 
 @app.command()
@@ -19,7 +28,8 @@ def usaspending(
     awards: Annotated[
         bool,
         typer.Option(
-            help="Get the latest awards for entity. If false, then gets the entity's profile data"
+            default=False,
+            help="Get the latest awards for entity. If false, then gets the entity's profile data",
         ),
     ] = False,
 ):
