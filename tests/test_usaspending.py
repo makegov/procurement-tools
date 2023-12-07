@@ -34,3 +34,17 @@ def test_get_usaspending_URL(uei):
         USASpending.get_usaspending_URL(uei)
         == f"https://www.usaspending.gov/recipient/{uei_hash}/latest"
     )
+
+
+def test_get_recipient_profile(usas_recipient_api_results):
+    res = USASpending.get_recipient_profile("J7M9HPTGJ1S9")
+    assert res["name"] == "TRIWEST HEALTHCARE ALLIANCE CORP"
+
+
+def test_get_latest_recipient_awards(usas_awards_api_results):
+    res = USASpending.get_latest_recipient_awards("J7M9HPTGJ1S9")
+    assert len(res["results"]) == 8
+    assert (
+        res["results"][0]["generated_internal_id"]
+        == "CONT_AWD_36C10G24F0004_3600_36C10G21D0001_3600"
+    )

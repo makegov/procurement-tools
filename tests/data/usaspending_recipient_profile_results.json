@@ -1,0 +1,50 @@
+{
+    "name": "TRIWEST HEALTHCARE ALLIANCE CORP",
+    "alternate_names": [
+        "TRIWEST HEALTHCARE ALLIANCE CO",
+        "TRIWEST HEALTHCARE ALLIANCE CORP.",
+        "TRIWEST HEALTHCARE ALLIANCE CORPORATION"
+    ],
+    "duns": "945580587",
+    "uei": "J7M9HPTGJ1S9",
+    "recipient_id": "bf1220c1-2373-042a-e8e1-33d5a29639d0-C",
+    "recipient_level": "C",
+    "parent_id": "bf1220c1-2373-042a-e8e1-33d5a29639d0-P",
+    "parent_name": "TRIWEST HEALTHCARE ALLIANCE CORP",
+    "parent_duns": "945580587",
+    "parent_uei": "J7M9HPTGJ1S9",
+    "parents": [
+        {
+            "parent_duns": "945580587",
+            "parent_name": "TRIWEST HEALTHCARE ALLIANCE CORP",
+            "parent_id": "bf1220c1-2373-042a-e8e1-33d5a29639d0-P",
+            "parent_uei": "J7M9HPTGJ1S9"
+        }
+    ],
+    "business_types": [
+        "category_business",
+        "corporate_entity_not_tax_exempt",
+        "other_than_small_business",
+        "special_designations",
+        "us_owned_business"
+    ],
+    "location": {
+        "address_line1": "15810 N 28TH AVE",
+        "address_line2": null,
+        "address_line3": null,
+        "foreign_province": null,
+        "city_name": "PHOENIX",
+        "county_name": null,
+        "state_code": "AZ",
+        "zip": "85053",
+        "zip4": "4021",
+        "foreign_postal_code": null,
+        "country_name": "UNITED STATES",
+        "country_code": "USA",
+        "congressional_code": "08"
+    },
+    "total_transaction_amount": 7984754268.12,
+    "total_transactions": 91,
+    "total_face_value_loan_amount": 0.0,
+    "total_face_value_loan_transactions": 0
+}
