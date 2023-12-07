@@ -46,3 +46,4 @@ Contents
    api
    cli
    entity
+   CHANGELOG
