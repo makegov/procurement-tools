@@ -8,7 +8,11 @@ from urllib.parse import urlencode
 
 API_KEY = os.environ.get("SAM_API_KEY")
 if not API_KEY:
-    API_KEY = keyring.get_password("system", "sam_api_key")
+    try:
+        API_KEY = keyring.get_password("system", "sam_api_key")
+    except keyring.errors.NoKeyringError:
+        print("No API KEY is set, please figure this out!")
+        API_KEY = "NONE"
 BASE_URL = f"https://api.sam.gov/entity-information/v3/entities?api_key={API_KEY}"
 
 
