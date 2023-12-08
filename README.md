@@ -43,80 +43,17 @@ print(res)
 
 ## CLI Usage
 
-# `fargo`
+Out of the box, there is a simple CLI, called `fargo`. You can use it to do things like:
 
-**Usage**:
+```sh
+fargo sam [UEI]
+# Dumps a json of an entity's information
 
-```console
-$ fargo [OPTIONS] COMMAND [ARGS]...
+fargo usaspending [UEI] --awards
+# Dumps a json of an entity's 10 most recent awards (in the last 90 days)
 ```
 
-**Options**:
-
-- `--install-completion`: Install completion for the current shell.
-- `--show-completion`: Show completion for the current shell, to copy it or customize the installation.
-- `--help`: Show this message and exit.
-
-**Commands**:
-
-- `far`: Get a provision of the FAR
-- `sam`: Get a SAM entity's JSON data by providing...
-- `usaspending`: Get JSON data about an entity from...
-
-## `fargo far`
-
-Get a provision of the FAR
-
-**Usage**:
-
-```console
-$ fargo far [OPTIONS] SECTION_NUMBER
-```
-
-**Arguments**:
-
-- `SECTION_NUMBER`: [required]
-
-**Options**:
-
-- `--help`: Show this message and exit.
-
-## `fargo sam`
-
-Get a SAM entity's JSON data by providing a UEI
-
-**Usage**:
-
-```console
-$ fargo sam [OPTIONS] UEI
-```
-
-**Arguments**:
-
-- `UEI`: [required]
-
-**Options**:
-
-- `--help`: Show this message and exit.
-
-## `fargo usaspending`
-
-Get JSON data about an entity from USASpending by providing a UEI
-
-**Usage**:
-
-```console
-$ fargo usaspending [OPTIONS] UEI
-```
-
-**Arguments**:
-
-- `UEI`: [required]
-
-**Options**:
-
-- `--awards / --no-awards`: [default: no-awards]
-- `--help`: Show this message and exit.
+Check out [the docs](https://procurement-tools.readthedocs.io/en/latest/cli.html) for all of the CLI options
 
 ## Installation
 

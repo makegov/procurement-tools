@@ -47,3 +47,18 @@ def usas_awards_api_results(monkeypatch):
         return MockUSASAwardsResponse
 
     monkeypatch.setattr(httpx, "post", mock_get)
+
+
+class MockSBIRSolicitationResponse:
+    def json():
+        with open("./tests/data/sbir_solicitations.json", "r") as fp:
+            data = json.load(fp)
+        return data
+
+
+@pytest.fixture
+def sbir_solicitations_api_results(monkeypatch):
+    def mock_get(*args, **kwargs):
+        return MockSBIRSolicitationResponse
+
+    monkeypatch.setattr(httpx, "get", mock_get)
