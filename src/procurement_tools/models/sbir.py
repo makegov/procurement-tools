@@ -5,7 +5,7 @@ from typing import List, Optional
 class Firm(BaseModel):
     """The firm that won a SBIR award"""
 
-    firm: str
+    firm: Optional[str]
     award_title: str
     agency: str
     branch: str

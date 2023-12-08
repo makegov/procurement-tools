@@ -1,4 +1,5 @@
 from .models.sbir import AwardList, Firm, Solicitation, SolicitationList
+from pydantic import ValidationError
 import httpx
 from typing import List
 
@@ -62,7 +63,7 @@ class SBIR:
             A list of Firm pydantic models
 
         """
-        url = f"https://www.sbir.gov/api/awards.json?rows=1000"
+        url = f"https://www.sbir.gov/api/awards.json?rows=10000"
         if agency:
             url += f"&agency={agency}"
         if company:
@@ -71,9 +72,28 @@ class SBIR:
             url += f"&year={year}"
         if research_institution:
             url += f"&ri={research_institution}"
-        res = httpx.get(url)
+
+        success = True
+        results = []
         awards = []
-        if not res.json() == {"ERROR": "No record found."}:
-            for obj in res.json():
+        start = 0
+
+        while success:
+            try:
+                res = httpx.get(f"{url}&start={start}", timeout=60.0)
+            except httpx.ReadTimeout as exc:
+                continue
+            data = res.json()
+            if data == {"ERROR": "No record found."}:
+                success = False
+            else:
+                results.extend(data)
+                start = start + 10000
+
+        for obj in results:
+            try:
                 awards.append(Firm(**obj))
+            except ValidationError:
+                print(f"ERROR on {obj}")
+                continue
         return AwardList(results=awards)

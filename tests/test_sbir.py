@@ -30,10 +30,11 @@ def test_sbir_get_solicitations_keyword(sbir_solicitations_api_results):
 
 
 def test_sbir_get_awards(sbir_awards_api_results):
-    res = SBIR.get_awards(agency="DOC")
-    assert len(res.results) == 100
+    res = SBIR.get_awards()
+    assert len(res.results) == 200
     assert (
         res.results[0].award_title
         == "SBIR Phase I:An inclusive machine learning-based digital platform to credential soft skills"
     )
     assert res.results[0].firm == "LIVEDX INC."
+    assert res.results[100].firm == "L-Infinity Labs, Inc."
