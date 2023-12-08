@@ -1,5 +1,53 @@
 from pydantic import BaseModel
-from typing import List
+from typing import List, Optional
+
+
+class Firm(BaseModel):
+    """The firm that won a SBIR award"""
+
+    firm: str
+    award_title: str
+    agency: str
+    branch: str
+    phase: str
+    program: str
+    agency_tracking_number: str
+    contract: str
+    proposal_award_date: str
+    contract_end_date: str
+    solicitation_number: str
+    solicitation_year: str
+    topic_code: str
+    award_year: str
+    award_amount: str
+    duns: str
+    hubzone_owned: str
+    socially_economically_disadvantaged: str
+    women_owned: str
+    number_employees: str
+    company_url: str
+    address1: str
+    address2: str
+    city: str
+    state: str
+    zip: str
+    poc_name: str
+    poc_title: str
+    poc_phone: str
+    poc_email: str
+    pi_name: str
+    pi_title: str
+    pi_phone: str
+    pi_email: str
+    ri_name: Optional[str]
+    ri_poc_name: Optional[str]
+    ri_poc_phone: Optional[str]
+    abstract: str
+    award_link: str
+
+
+class AwardList(BaseModel):
+    results: List[Firm]
 
 
 class Subtopic(BaseModel):

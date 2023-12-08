@@ -27,3 +27,13 @@ def test_sbir_get_solicitations_keyword(sbir_solicitations_api_results):
         res.results[0].solicitation_title
         == "NOAA FY 2024 Small Business Innovation Research Phase I NOFO"
     )
+
+
+def test_sbir_get_awards(sbir_awards_api_results):
+    res = SBIR.get_awards(agency="DOC")
+    assert len(res.results) == 100
+    assert (
+        res.results[0].award_title
+        == "SBIR Phase I:An inclusive machine learning-based digital platform to credential soft skills"
+    )
+    assert res.results[0].firm == "LIVEDX INC."
