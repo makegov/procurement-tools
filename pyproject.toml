@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "procurement-tools"
-version = "0.1.5"
+version = "0.1.6"
 description = "Python tools for navigating federal contracting"
 authors = ["V. David Zvenyach <dave@tandemgov.com>"]
 readme = "README.md"
@@ -15,8 +15,9 @@ fargo = 'procurement_tools.cli.main:app'
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.4.3"
-ipdb = "^0.13.13"
 tox = "^4.11.4"
+pytest-mock = "^3.12.0"
+respx = "^0.20.2"
 
 
 [tool.poetry.group.docs.dependencies]

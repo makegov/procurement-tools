@@ -1,9 +1,11 @@
 import json
-from procurement_tools import FAR, USASpending, get_entity
+from procurement_tools import FAR, USASpending, SBIR, get_entity
 import typer
 from typing_extensions import Annotated
 
 app = typer.Typer()
+sbir_app = typer.Typer()
+app.add_typer(sbir_app, name="sbir")
 
 
 @app.command()
@@ -18,6 +20,30 @@ def far(section_number: str):
 def sam(uei: str):
     """Get a SAM entity's JSON data by providing a UEI"""
     res = get_entity({"ueiSAM": uei})
+    print(res.model_dump_json())
+
+
+@sbir_app.command()
+def awards(
+    agency: str = None,
+    company: str = None,
+    year: int = None,
+    research_institution: str = None,
+):
+    """Get SBIR awards"""
+    res = SBIR.get_awards(
+        agency=agency,
+        company=company,
+        year=year,
+        research_institution=research_institution,
+    )
+    print(res.model_dump_json())
+
+
+@sbir_app.command()
+def solicitations(keyword: str = None, agency: str = None, open: int = 1):
+    """Get SBIR solicitaitons"""
+    res = SBIR.get_solicitations(keyword=keyword, agency=agency, open=open)
     print(res.model_dump_json())
 
 

@@ -42,8 +42,7 @@ Contents
 .. toctree::
    :maxdepth: 1
 
-   roadmap
    api
    cli
-   entity
+   models
    CHANGELOG
