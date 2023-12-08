@@ -28,7 +28,7 @@ def test_sbir_get_awards(sbir_awards_api_results):
     assert "MEDICARBONE" in result.stdout
 
 
-def test_sbir_get_awards(sbir_solicitations_api_results):
+def test_sbir_get_solicitations(sbir_solicitations_api_results):
     result = runner.invoke(app, ["sbir", "solicitations"])
     assert result.exit_code == 0
     assert "Advancing Research" in result.stdout

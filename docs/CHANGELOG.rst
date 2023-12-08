@@ -1,6 +1,14 @@
 CHANGELOG
 =========
 
+0.1.6
+-----
+
+New
+~~~
+- Access to the SBIR API with two methods (:code:`SBIR.get_awards` and :code:`SBIR.get_solicitations`), that allow for downloading SBIR awards and solicitations, respectively
+- Added new pydantic models related to SBIR
+
 0.1.5
 -----
 

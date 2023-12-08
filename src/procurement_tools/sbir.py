@@ -50,7 +50,7 @@ class SBIR:
         year: int = None,
         research_institution: str = None,
     ) -> AwardList:
-        """Get solicitations from the SBIR API
+        """Get awards from the SBIR API
 
         Args:
             agency: the department/agency of record (e.g., "HHS")
