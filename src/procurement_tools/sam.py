@@ -1,5 +1,6 @@
 from .models.entity import Entity
 from .uei import UEI
+from getpass import getpass
 import keyring
 import os
 from pydantic import BaseModel, Field, field_validator, ValidationError
@@ -11,8 +12,7 @@ if not API_KEY:
     try:
         API_KEY = keyring.get_password("system", "sam_api_key")
     except keyring.errors.NoKeyringError:
-        print("No API KEY is set, please figure this out!")
-        API_KEY = "NONE"
+        API_KEY = getpass(prompt="Please enter your SAM API KEY")
 BASE_URL = f"https://api.sam.gov/entity-information/v3/entities?api_key={API_KEY}"
 
 
