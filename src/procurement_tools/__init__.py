@@ -1,6 +1,6 @@
 from .far import FAR
 from .periodic_table import PeriodicTable
-from .sam import get_entity
+from .sam import get_entity, get_opportunities
 from .sbir import SBIR
 from .uei import UEI
 from .usaspending import USASpending
@@ -12,4 +12,5 @@ __all__ = [
     "PeriodicTable",
     "SBIR",
     "get_entity",
+    "get_opportunities",
 ]
