@@ -38,7 +38,7 @@ def opportunities(
     postedTo: str = TODAY,
     limit: int = 1000
 ):
-    """Get a SAM entity's JSON data by providing a UEI"""
+    """Get SAM opportunities' JSON data"""
     res = get_opportunities(
         {"title": title, "postedFrom": postedFrom, "postedTo": postedTo, "limit": limit}
     )

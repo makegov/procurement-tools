@@ -64,7 +64,7 @@ def get_entity(params: dict) -> Entity:
 
 
 def get_opportunities(params: dict) -> dict:
-    """Get a pydantic model of an Entity from the `SAM API <https://open.gsa.gov/api/get-opportunities-public-api>`_.
+    """Get a JSON of an opportunity from the `SAM API <https://open.gsa.gov/api/get-opportunities-public-api>`_.
 
     Typical usage::
 
