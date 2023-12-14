@@ -107,7 +107,7 @@ def test_get_entity_integrity(monkeypatch):
     )
 
 
-def test_get_entity_integrity(sam_opportunties):
+def test_get_opportunities(sam_opportunties):
     res = get_opportunities(
         dict(title="SPRUCE", postedFrom="12/14/2023", postedTo="12/14/2023", limit=1000)
     )
