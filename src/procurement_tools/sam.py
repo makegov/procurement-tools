@@ -1,6 +1,7 @@
 from .models.entity import Entity
 from .models.opportunities import OpportunitiesRequestParams
 from .uei import UEI
+import httpx
 from getpass import getpass
 import keyring
 import os
@@ -77,6 +78,7 @@ def get_opportunities(params: dict) -> dict:
     Returns:
         A dict
     """
+
     try:
         request_params = OpportunitiesRequestParams(**params).model_dump(
             exclude_none=True
@@ -88,6 +90,6 @@ def get_opportunities(params: dict) -> dict:
 
     param_str = urlencode(request_params)
     url = f"{BASE_URL}&{param_str}"
-    res = requests.get(url)
+    res = httpx.get(url)
     data = res.json()
     return data
