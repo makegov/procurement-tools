@@ -42,7 +42,7 @@ def opportunities(
     res = get_opportunities(
         {"title": title, "postedFrom": postedFrom, "postedTo": postedTo, "limit": limit}
     )
-    print(res)
+    print(json.dumps(res))
 
 
 @sbir_app.command()
@@ -64,7 +64,7 @@ def awards(
 
 @sbir_app.command()
 def solicitations(keyword: str = None, agency: str = None, open: int = 1):
-    """Get SBIR solicitaitons"""
+    """Get SBIR solicitations"""
     res = SBIR.get_solicitations(keyword=keyword, agency=agency, open=open)
     print(res.model_dump_json())
 
