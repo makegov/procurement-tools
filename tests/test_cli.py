@@ -11,7 +11,19 @@ def test_sam(sam_api_results):
 
 
 def test_sam_opportunities(sam_opportunties):
-    result = runner.invoke(app, ["sam", "opportunities", "--title", "SPRUCE"])
+    result = runner.invoke(
+        app,
+        [
+            "sam",
+            "opportunities",
+            "--title",
+            "SPRUCE",
+            "--postedfrom",
+            "12/14/2023",
+            "--postedto",
+            "12/14/2023",
+        ],
+    )
     assert result.exit_code == 0
     assert (
         "DA01--VA Secure, Performant, Reliable, and User-Centered  Experiences (SPRUCE)"
