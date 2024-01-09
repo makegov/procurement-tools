@@ -4,6 +4,8 @@ from .uei import UEI
 import httpx
 from getpass import getpass
 import keyring
+from random import choice
+from string import digits
 import os
 from pydantic import BaseModel, Field, field_validator, ValidationError
 import requests
@@ -61,6 +63,20 @@ def get_entity(params: dict) -> Entity:
     res = requests.get(url)
     data = res.json()
     return Entity(**data["entityData"][0])
+
+
+class SAM:
+    def get_full_opportunities(params: dict) -> dict:
+        seed = "".join(choice(digits) for i in range(13))
+        mode = params.get("mode", "ALL")
+        active = params.get("active", "true")
+        BASE_URL = f"https://sam.gov/api/prod/sgs/v1/search/?random={seed}&index=opp&page=0&sort=-modifiedDate&size=1000&mode=search&responseType=json&qMode={mode}&is_active={active}"
+
+        param_str = urlencode(params)
+        url = f"{BASE_URL}&{param_str}"
+        res = httpx.get(url)
+        data = res.json()
+        return data
 
 
 def get_opportunities(params: dict) -> dict:
