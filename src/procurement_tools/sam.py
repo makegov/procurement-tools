@@ -67,10 +67,33 @@ def get_entity(params: dict) -> Entity:
 
 
 class SAM:
-    """ """
+    """A class representing SAM.gov's search capabilities
+
+    At the moment it's limited to searching for opportunities, but eventually will subsume the entities and more!
+
+    Typical usage::
+
+            from procurement_tools import SAM
+            res = SAM.get_opportunities({"q":"Agile"})
+            opportunity = res.get_api_opportunity_by_id(res["opportunitiesData"][0]["noticeId"])
+
+    """
 
     def get_opportunities(params: dict) -> dict:
-        """ """
+        """
+        Get a list of opportunities from SAM.gov using keyword search.
+
+        Typical usage::
+
+            from procurement_tools import SAM
+            res = SAM.get_opportunities({"q":"Agile"})
+
+        Args:
+            params: A dict that includes a query (e.g., {"q":"Agile"}) and optionally other search parameters.
+
+        Returns:
+            A dict of the search results
+        """
         seed = "".join(choice(digits) for i in range(13))
         mode = params.get("mode", "ALL")
         active = params.get("active", "true")
@@ -87,8 +110,8 @@ class SAM:
 
         Typical usage::
 
-            from procurement_tools.SAM import get_api_opportunities
-            res = get_api_opportunities({"postedFrom":"12/14/2023", "postedTo": "12/14/2023", "limit": 1000})
+            from procurement_tools import SAM
+            res = SAM.get_api_opportunities({"postedFrom":"12/14/2023", "postedTo": "12/14/2023", "limit": 1000})
 
         Args:
             params: A dict for the request parameters to the SAM API. As currently implemented, we use \

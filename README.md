@@ -49,8 +49,8 @@ Out of the box, there is a simple CLI, called `fargo`. You can use it to do thin
 fargo sam entity [UEI]
 # Dumps a json of an entity's information
 
-fargo sam opportunities --title "machine"
-# Dumps a json of an entity's information
+fargo sam opportunities --q "machine"
+# Dumps a json of active opportunities that match the keyword "machine"
 
 fargo usaspending [UEI] --awards
 # Dumps a json of an entity's 10 most recent awards (in the last 90 days)
