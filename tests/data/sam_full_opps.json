@@ -1,0 +1,181 @@
+{
+    "_embedded": {
+        "results": [
+            {
+                "isCanceled": false,
+                "_rScore": 41,
+                "_type": "opportunity",
+                "publishDate": "2024-01-10T19:45:09+00:00",
+                "isActive": true,
+                "title": "Request for Information to Assist in Market Research for Future Requirement Similar to Special Operations Forces (SOF) Global Logistics Support Services (GLSS) Contract",
+                "type": {
+                    "code": "p",
+                    "value": "Presolicitation"
+                },
+                "descriptions": [
+                    {
+                        "lastModifiedDate": "2024-01-10T19:45:09.941+00:00",
+                        "content": "<p>**UPDATE AS OF 03 JANUARY 2024**</p>\n\n<p>The purpose of this update is to extend the white paper deadline to 30 January 2024. All white papers should be submitted via email to SOCOM.PEO.SOFSA.Contracting.DL@socom.mil.&nbsp;</p>\n\n<p>**UPDATE AS OF "
+                    }
+                ],
+                "solicitationNumber": "H9225423RGLSS",
+                "responseDate": "2023-10-18T21:00:00+00:00",
+                "parentNoticeId": "18d1c1aa5370436d8240c37ef754648e",
+                "award": {
+                    "awardee": {
+                        "ueiSAM": null,
+                        "name": null
+                    }
+                },
+                "responseTimeZone": "America/New_York",
+                "modifiedDate": "2024-01-10T19:45:09+00:00",
+                "organizationHierarchy": [
+                    {
+                        "organizationId": "100000000",
+                        "address": {
+                            "zip": null,
+                            "country": null,
+                            "city": null,
+                            "streetAddress": null,
+                            "streetAddress2": null,
+                            "state": null
+                        },
+                        "level": 1,
+                        "name": "DEPT OF DEFENSE",
+                        "type": "DEPARTMENT",
+                        "status": "active"
+                    },
+                    {
+                        "organizationId": "300000430",
+                        "address": {
+                            "zip": null,
+                            "country": null,
+                            "city": null,
+                            "streetAddress": null,
+                            "streetAddress2": null,
+                            "state": null
+                        },
+                        "level": 2,
+                        "name": "U.S. SPECIAL OPERATIONS COMMAND (USSOCOM)",
+                        "type": "AGENCY",
+                        "status": "active"
+                    },
+                    {
+                        "organizationId": "500043598",
+                        "address": {
+                            "zip": "40516-9723",
+                            "country": "USA",
+                            "city": "LEXINGTON",
+                            "streetAddress": "BLDG 3  BLUE GRASS STATION",
+                            "streetAddress2": "5751 BRIAR HILL ROAD",
+                            "state": "KY"
+                        },
+                        "level": 3,
+                        "name": "SPECIAL OPERATIONS FORCES SPT ACTY",
+                        "type": "OFFICE",
+                        "status": "active"
+                    }
+                ],
+                "_id": "f2483be142e64eeabcc5fba2f8992251",
+                "responseDateActual": "2023-10-18T17:00:00-04:00",
+                "modifications": {
+                    "count": 5
+                }
+            },
+            {
+                "isCanceled": false,
+                "_rScore": 100,
+                "_type": "opportunity",
+                "publishDate": "2024-01-10T15:35:26+00:00",
+                "isActive": true,
+                "title": "PEO EIS/PM ARDAP PMO Support Contract",
+                "type": {
+                    "code": "r",
+                    "value": "Sources Sought"
+                },
+                "descriptions": [
+                    {
+                        "lastModifiedDate": "2024-01-10T15:35:26.06+00:00",
+                        "content": "<p>Update as of 10 Jan 2024: The purpose of this update is:</p>\n\n<p>1. To extend the response due date from 23 Jan 2024 to 29 Jan 2024.</p>\n\n<p>2. The Government will accept questions related to the RFI until 1400 16 Jan 2024.&nbsp;</p>\n\n<p>PROGRAM E"
+                    }
+                ],
+                "solicitationNumber": "ARDAP002",
+                "responseDate": "2024-01-29T22:00:00+00:00",
+                "parentNoticeId": "25c1c98e4ee545f3babaaddc5ddadae4",
+                "award": {
+                    "awardee": {
+                        "ueiSAM": null,
+                        "name": null
+                    }
+                },
+                "responseTimeZone": "America/New_York",
+                "modifiedDate": "2024-01-10T15:35:26+00:00",
+                "organizationHierarchy": [
+                    {
+                        "organizationId": "100000000",
+                        "address": {
+                            "zip": null,
+                            "country": null,
+                            "city": null,
+                            "streetAddress": null,
+                            "streetAddress2": null,
+                            "state": null
+                        },
+                        "level": 1,
+                        "name": "DEPT OF DEFENSE",
+                        "type": "DEPARTMENT",
+                        "status": "active"
+                    },
+                    {
+                        "organizationId": "300000201",
+                        "address": {
+                            "zip": null,
+                            "country": null,
+                            "city": null,
+                            "streetAddress": null,
+                            "streetAddress2": null,
+                            "state": null
+                        },
+                        "level": 2,
+                        "name": "DEPT OF THE ARMY",
+                        "type": "AGENCY",
+                        "status": "active"
+                    },
+                    {
+                        "organizationId": "100125045",
+                        "address": {
+                            "zip": "22060-0000",
+                            "country": "USA",
+                            "city": "FORT BELVOIR",
+                            "streetAddress": "AESIP",
+                            "streetAddress2": "9351 HALL ROAD  BLDG 1456",
+                            "state": "VA"
+                        },
+                        "level": 3,
+                        "name": "USA PEO, ENTERPRISE INFORMATION SYS",
+                        "type": "OFFICE",
+                        "status": "active"
+                    }
+                ],
+                "_id": "bc485f1c4d24430d9a3413ae9821b445",
+                "responseDateActual": "2024-01-29T17:00:00-05:00",
+                "modifications": {
+                    "count": 1
+                }
+            }
+        ]
+    },
+    "_links": {
+        "self": {
+            "href": "https://52samdotgovsearch.prod.apps-internal.prod-iae.bsp.gsa.gov/sgs/v1/search?index=opp&index=opp&q=Agile&q=Agile&page=0&page=0&size=1000&size=1000&sort=-modifiedDate&sort=-modifiedDate&raw=false&mode=search%2CALL&mode=search&random=8803378780062&responseType=json&qMode=ALL&qMode=ALL&is_active=true&modified_date.from=2024-01-10-06%3A00&modified_date.to=2024-01-10-06%3A00&active=true{&exactMatch}",
+            "templated": true
+        }
+    },
+    "page": {
+        "size": 2,
+        "totalElements": 2,
+        "totalPages": 1,
+        "number": 0,
+        "maxAllowedRecords": 10000
+    }
+}

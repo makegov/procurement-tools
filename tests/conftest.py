@@ -100,11 +100,31 @@ def sbir_awards_api_results(respx_mock):
 
 @pytest.fixture
 @pytest.mark.respx(base_url="https://api.sam.gov")
-def sam_opportunties(respx_mock):
+def sam_api_opportunties(respx_mock):
     with open("./tests/data/sam_opps.json", "r") as fp:
         data = json.load(fp)
     respx_mock.get(
         "https://api.sam.gov/opportunities/v2/search?api_key=NotARealKey&title=SPRUCE&postedFrom=12%2F14%2F2023&postedTo=12%2F14%2F2023&limit=1000&offset=0"
     ).mock(
+        return_value=httpx.Response(200, json=data),
+    )
+
+
+@pytest.fixture
+@pytest.mark.respx(base_url="https://sam.gov/api/prod/sgs/v1/search/")
+def sam_opportunties(respx_mock):
+    with open("./tests/data/sam_full_opps.json", "r") as fp:
+        data = json.load(fp)
+    respx_mock.get("https://sam.gov/api/prod/sgs/v1/search/").mock(
+        return_value=httpx.Response(200, json=data),
+    )
+
+
+@pytest.fixture
+@pytest.mark.respx(base_url="https://api.sam.gov")
+def sam_api_opportunity(respx_mock):
+    with open("./tests/data/sam_individual_opp.json", "r") as fp:
+        data = json.load(fp)
+    respx_mock.get("https://api.sam.gov").mock(
         return_value=httpx.Response(200, json=data),
     )

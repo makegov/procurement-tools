@@ -16,17 +16,13 @@ def test_sam_opportunities(sam_opportunties):
         [
             "sam",
             "opportunities",
-            "--title",
-            "SPRUCE",
-            "--postedfrom",
-            "12/14/2023",
-            "--postedto",
-            "12/14/2023",
+            "--q",
+            "Agile",
         ],
     )
     assert result.exit_code == 0
     assert (
-        "DA01--VA Secure, Performant, Reliable, and User-Centered  Experiences (SPRUCE)"
+        "Request for Information to Assist in Market Research for Future Requirement"
         in result.stdout
     )
 

@@ -1,6 +1,7 @@
 from .models.entity import Entity
 from .models.opportunities import OpportunitiesRequestParams
 from .uei import UEI
+from datetime import date, timedelta
 import httpx
 from getpass import getpass
 import keyring
@@ -66,7 +67,10 @@ def get_entity(params: dict) -> Entity:
 
 
 class SAM:
-    def get_full_opportunities(params: dict) -> dict:
+    """ """
+
+    def get_opportunities(params: dict) -> dict:
+        """ """
         seed = "".join(choice(digits) for i in range(13))
         mode = params.get("mode", "ALL")
         active = params.get("active", "true")
@@ -78,34 +82,55 @@ class SAM:
         data = res.json()
         return data
 
+    def get_api_opportunities(params: dict) -> dict:
+        """Get a JSON of an opportunity from the `SAM API <https://open.gsa.gov/api/get-opportunities-public-api>`_.
 
-def get_opportunities(params: dict) -> dict:
-    """Get a JSON of an opportunity from the `SAM API <https://open.gsa.gov/api/get-opportunities-public-api>`_.
+        Typical usage::
 
-    Typical usage::
+            from procurement_tools.SAM import get_api_opportunities
+            res = get_api_opportunities({"postedFrom":"12/14/2023", "postedTo": "12/14/2023", "limit": 1000})
 
-        from procurement_tools import get_opportunities
-        res = get_opportunities({"postedFrom":"12/14/2023", "postedTo": "12/14/2023", "limit": 1000})
+        Args:
+            params: A dict for the request parameters to the SAM API. As currently implemented, we use \
+            OpportunitiesRequestParams to check whether the parameters are valid.
 
-    Args:
-        params: A dict for the request parameters to the SAM API. As currently implemented, we use \
-        OpportunitiesRequestParams to check whether the parameters are valid.
+        Returns:
+            A dict
+        """
 
-    Returns:
-        A dict
-    """
+        try:
+            request_params = OpportunitiesRequestParams(**params).model_dump(
+                exclude_none=True
+            )
+        except ValidationError:
+            raise
 
-    try:
-        request_params = OpportunitiesRequestParams(**params).model_dump(
-            exclude_none=True
-        )
-    except ValidationError:
-        raise
+        BASE_URL = f"https://api.sam.gov/opportunities/v2/search?api_key={API_KEY}"
 
-    BASE_URL = f"https://api.sam.gov/opportunities/v2/search?api_key={API_KEY}"
+        param_str = urlencode(request_params)
+        url = f"{BASE_URL}&{param_str}"
+        res = httpx.get(url)
+        data = res.json()
+        return data
 
-    param_str = urlencode(request_params)
-    url = f"{BASE_URL}&{param_str}"
-    res = httpx.get(url)
-    data = res.json()
-    return data
+    def get_api_opportunity_by_id(notice_id: str) -> dict:
+        """Get a JSON of a specific opportunity from the `SAM API <https://open.gsa.gov/api/get-opportunities-public-api>`_.
+
+        Typical usage::
+
+            from procurement_tools import SAM
+            res = SAM.get_api_opportunity_by_id("f2483be142e64eeabcc5fba2f8992251")
+
+        Args:
+            notice_id: The SAM notice unique identifier.
+
+        Returns:
+            A dict
+        """
+
+        TODAY = date.today()
+        YEAR_AGO = TODAY - timedelta(days=364)
+        url = f"https://api.sam.gov/opportunities/v2/search?api_key={API_KEY}&postedFrom={YEAR_AGO.strftime('%m/%d/%Y')}&postedTo={TODAY.strftime('%m/%d/%Y')}&noticeid={notice_id}&limit=1"
+        res = httpx.get(url)
+        data = res.json()
+        return data

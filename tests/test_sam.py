@@ -1,6 +1,6 @@
 import json
 from procurement_tools.models.entity import Entity
-from procurement_tools.sam import get_entity, get_opportunities
+from procurement_tools.sam import SAM, get_entity
 from pydantic import ValidationError
 import pytest
 import requests
@@ -108,7 +108,24 @@ def test_get_entity_integrity(monkeypatch):
 
 
 def test_get_opportunities(sam_opportunties):
-    res = get_opportunities(
+    res = SAM.get_opportunities(dict(q="Agile"))
+    assert res["_embedded"]["results"][0]["_id"] == "f2483be142e64eeabcc5fba2f8992251"
+    assert (
+        res["_embedded"]["results"][0]["title"]
+        == "Request for Information to Assist in Market Research for Future Requirement Similar to Special Operations Forces (SOF) Global Logistics Support Services (GLSS) Contract"
+    )
+
+
+def test_get_api_opportunities(sam_api_opportunties):
+    res = SAM.get_api_opportunities(
         dict(title="SPRUCE", postedFrom="12/14/2023", postedTo="12/14/2023", limit=1000)
     )
     assert res["opportunitiesData"][0]["noticeId"] == "b3cf1793862c42b8929616760bac4610"
+
+
+def test_get_api_opportunity(sam_api_opportunity):
+    res = SAM.get_api_opportunity_by_id("f2483be142e64eeabcc5fba2f8992251")
+    assert (
+        res["opportunitiesData"][0]["title"]
+        == "Request for Information to Assist in Market Research for Future Requirement Similar to Special Operations Forces (SOF) Global Logistics Support Services (GLSS) Contract"
+    )

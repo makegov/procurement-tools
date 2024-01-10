@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta
 import json
-from procurement_tools import FAR, USASpending, SBIR, get_entity, get_opportunities
+from procurement_tools import FAR, USASpending, SAM, SBIR, get_entity
 from procurement_tools.models.opportunities import OpportunitiesRequestParams
 import typer
 from typing_extensions import Annotated
@@ -33,15 +33,29 @@ def entity(uei: str):
 @sam_app.command()
 def opportunities(
     *,
-    title: str = "",
-    postedFrom: str = TODAY,
-    postedTo: str = TODAY,
-    limit: int = 1000
+    q: str = "",
+    postedFrom: str = datetime.now().strftime("%Y-%m-%d"),
+    postedTo: str = datetime.now().strftime("%Y-%m-%d"),
+    active: str = "true",
+    mode: str = "ALL",
 ):
     """Get SAM opportunities' JSON data"""
-    res = get_opportunities(
-        {"title": title, "postedFrom": postedFrom, "postedTo": postedTo, "limit": limit}
+    res = SAM.get_opportunities(
+        {
+            "q": q,
+            "modified_date.from": postedFrom + "-06:00",
+            "modified_date.to": postedTo + "-06:00",
+            "active": active,
+            "mode": mode,
+        }
     )
+    print(json.dumps(res))
+
+
+@sam_app.command()
+def opportunity(notice_id: str):
+    """Get SAM opportunity JSON data"""
+    res = SAM.get_api_opportunity_by_id(notice_id)
     print(json.dumps(res))
 
 
