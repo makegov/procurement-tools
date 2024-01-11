@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta
 import json
-from procurement_tools import FAR, USASpending, SAM, SBIR, get_entity
+from procurement_tools import FAR, USASpending, SAM, SBIR
 from procurement_tools.models.opportunities import OpportunitiesRequestParams
 import typer
 from typing_extensions import Annotated
@@ -26,7 +26,7 @@ def far(section_number: str):
 @sam_app.command()
 def entity(uei: str):
     """Get a SAM entity's JSON data by providing a UEI"""
-    res = get_entity({"ueiSAM": uei})
+    res = SAM.get_entity({"ueiSAM": uei})
     print(res.model_dump_json())
 
 

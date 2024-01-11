@@ -36,40 +36,8 @@ class EntityRequestParams(BaseModel):
         raise ValueError("UEI is not valid!")
 
 
-def get_entity(params: dict) -> Entity:
-    """Get a pydantic model of an Entity from the `SAM API <https://open.gsa.gov/api/entity-api/>`_.
-
-    Typical usage::
-
-        from procurement_tools import get_entity
-        res = get_entity({ueiSAM:"XRVFU3YRA2U5"})
-
-    Args:
-        params: A dict for the request parameters to the SAM API. As currently implemented, we use \
-        EntityRequestParams to check whether the parameters are valid. This is limited to `ueiSAM` and \
-        `includeSections`
-
-    Returns:
-        A pydantic Entity modle
-    """
-    try:
-        request_params = EntityRequestParams(**params).model_dump(exclude_none=True)
-    except ValidationError:
-        raise
-
-    BASE_URL = f"https://api.sam.gov/entity-information/v3/entities?api_key={API_KEY}"
-
-    param_str = urlencode(request_params)
-    url = f"{BASE_URL}&{param_str}"
-    res = requests.get(url)
-    data = res.json()
-    return Entity(**data["entityData"][0])
-
-
 class SAM:
-    """A class representing SAM.gov's search capabilities
-
-    At the moment it's limited to searching for opportunities, but eventually will subsume the entities and more!
+    """A class representing SAM.gov's entity and search capabilities
 
     Typical usage::
 
@@ -78,6 +46,37 @@ class SAM:
             opportunity = res.get_api_opportunity_by_id(res["opportunitiesData"][0]["noticeId"])
 
     """
+
+    def get_entity(params: dict) -> Entity:
+        """Get a pydantic model of an Entity from the `SAM API <https://open.gsa.gov/api/entity-api/>`_.
+
+        Typical usage::
+
+            from procurement_tools import SAM
+            res = SAM.get_entity({ueiSAM:"XRVFU3YRA2U5"})
+
+        Args:
+            params: A dict for the request parameters to the SAM API. As currently implemented, we use \
+            EntityRequestParams to check whether the parameters are valid. This is limited to `ueiSAM` and \
+            `includeSections`
+
+        Returns:
+            A pydantic Entity modle
+        """
+        try:
+            request_params = EntityRequestParams(**params).model_dump(exclude_none=True)
+        except ValidationError:
+            raise
+
+        BASE_URL = (
+            f"https://api.sam.gov/entity-information/v3/entities?api_key={API_KEY}"
+        )
+
+        param_str = urlencode(request_params)
+        url = f"{BASE_URL}&{param_str}"
+        res = requests.get(url)
+        data = res.json()
+        return Entity(**data["entityData"][0])
 
     def get_opportunities(params: dict) -> dict:
         """

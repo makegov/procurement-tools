@@ -1,6 +1,6 @@
 import json
 from procurement_tools.models.entity import Entity
-from procurement_tools.sam import SAM, get_entity
+from procurement_tools.sam import SAM
 from pydantic import ValidationError
 import pytest
 import requests
@@ -51,12 +51,14 @@ def test_get_entity(monkeypatch):
         return MockSAMEntityResponse
 
     monkeypatch.setattr(requests, "get", mock_get)
-    res = get_entity(dict(ueiSAM="XRVFU3YRA2U5", includeSections="entityRegistration"))
+    res = SAM.get_entity(
+        dict(ueiSAM="XRVFU3YRA2U5", includeSections="entityRegistration")
+    )
     assert res.registration.dba_name == "JAMES & ENYART"
 
     # Test check for invalid UEI
     with pytest.raises(ValidationError) as error:
-        get_entity(dict(ueiSAM="XRVFU3YRA2U5#$"))
+        SAM.get_entity(dict(ueiSAM="XRVFU3YRA2U5#$"))
     assert "UEI is not valid!" in str(error.value)
 
 
@@ -65,7 +67,7 @@ def test_get_entity_expanded(monkeypatch):
         return MockSAMExpandedEntityResponse
 
     monkeypatch.setattr(requests, "get", mock_get)
-    res = get_entity(
+    res = SAM.get_entity(
         dict(ueiSAM="XRVFU3YRA2U5", includeSections="entityRegistration,coreData")
     )
     assert res.registration.dba_name == "JAMES & ENYART"
@@ -77,7 +79,7 @@ def test_get_entity_full(monkeypatch):
         return MockSAMFullEntityResponse
 
     monkeypatch.setattr(requests, "get", mock_get)
-    res = get_entity(dict(ueiSAM="ZMXAHH8M8VL8"))
+    res = SAM.get_entity(dict(ueiSAM="ZMXAHH8M8VL8"))
     assert res.registration.legal_name == "OSHKOSH DEFENSE LLC"
     assert res.core_data.business_types.businessTypeList[0].business_type_code == "2X"
     assert res.assertions.goods_and_services.naics_list[0].naics_code == "221310"
@@ -92,7 +94,7 @@ def test_get_entity_integrity(monkeypatch):
         return MockSAMIntegrityEntityResponse
 
     monkeypatch.setattr(requests, "get", mock_get)
-    res = get_entity(dict(ueiSAM="SQ64PQQWATX8"))
+    res = SAM.get_entity(dict(ueiSAM="SQ64PQQWATX8"))
     assert res.registration.legal_name == "MAGNUM OPUS TECHNOLOGIES, INC"
     assert res.core_data.business_types.businessTypeList[0].business_type_code == "23"
     assert res.assertions.goods_and_services.naics_list[0].naics_code == "561110"
