@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "procurement-tools"
-version = "0.2.0"
+version = "0.2.1"
 description = "Python tools for navigating federal contracting"
 authors = ["V. David Zvenyach <dave@tandemgov.com>"]
 readme = "README.md"
