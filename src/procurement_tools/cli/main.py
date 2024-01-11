@@ -3,6 +3,7 @@ import json
 from procurement_tools import FAR, USASpending, SAM, SBIR
 from procurement_tools.models.opportunities import OpportunitiesRequestParams
 import typer
+from typing import Optional
 from typing_extensions import Annotated
 
 app = typer.Typer()
@@ -34,21 +35,25 @@ def entity(uei: str):
 def opportunities(
     *,
     q: str = "",
-    postedFrom: str = datetime.now().strftime("%Y-%m-%d"),
-    postedTo: str = datetime.now().strftime("%Y-%m-%d"),
+    postedFrom: Optional[
+        str
+    ] = None,  # (datetime.now() - timedelta(days=364)).strftime("%Y-%m-%d"),
+    postedTo: Optional[str] = None,  # datetime.now().strftime("%Y-%m-%d"),
     active: str = "true",
     mode: str = "ALL",
 ):
     """Get SAM opportunities' JSON data"""
-    res = SAM.get_opportunities(
-        {
-            "q": q,
-            "modified_date.from": postedFrom + "-06:00",
-            "modified_date.to": postedTo + "-06:00",
-            "active": active,
-            "mode": mode,
-        }
-    )
+    params = {
+        "q": q,
+        "active": active,
+        "mode": mode,
+    }
+    if postedFrom:
+        params["modified_date.from"] = (postedFrom + "-06:00",)
+    if postedTo:
+        params["modified_date.to"] = (postedTo + "-06:00",)
+
+    res = SAM.get_opportunities(params)
     print(json.dumps(res))
 
 
