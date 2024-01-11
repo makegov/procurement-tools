@@ -35,8 +35,8 @@ print(PeriodicTable.get_random_innovation())
 Additionally, we have the beginning of a SAM API client:
 
 ```python
-from procurement_tools import get_entity
-res = get_entity({"ueiSAM":"XRVFU3YRA2U5"})
+from procurement_tools import SAM
+res = SAM.get_entity({"ueiSAM":"XRVFU3YRA2U5"})
 print(res)
 # Returns a pydantic model with the latest SAM data for a given Entity
 ```
@@ -46,8 +46,11 @@ print(res)
 Out of the box, there is a simple CLI, called `fargo`. You can use it to do things like:
 
 ```sh
-fargo sam [UEI]
+fargo sam entity [UEI]
 # Dumps a json of an entity's information
+
+fargo sam opportunities --q "machine"
+# Dumps a json of active opportunities that match the keyword "machine"
 
 fargo usaspending [UEI] --awards
 # Dumps a json of an entity's 10 most recent awards (in the last 90 days)

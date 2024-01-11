@@ -24,8 +24,8 @@ Example Usage
    print(FAR.get_section("17.502-2"))
    # Returns a pydantic model with the title, section number, url, and text of the section
 
-   from procurement_tools import get_entity
-   res = get_entity({"ueiSAM":"XRVFU3YRA2U5"})
+   from procurement_tools import SAM
+   res = SAM.get_entity({"ueiSAM":"XRVFU3YRA2U5"})
    print(res)
    # Returns a pydantic model with the latest SAM data for a given Entity
 
