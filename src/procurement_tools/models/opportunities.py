@@ -42,7 +42,21 @@ class SetAsideEnum(str, Enum):
     vss = "Veteran-Owned Small Business Sole source (specific to Department of Veterans Affairs)"
 
 
+class modeEnum(str, Enum):
+    any_mode = "ANY"
+    exact_mode = "EXACT"
+    all_mode = "ALL"
+
+
 class OpportunitiesRequestParams(BaseModel):
+    q: str = None
+    is_active: str = Field(default="true", alias="active")
+    qMode: modeEnum = Field(default="ALL", description="query mode", alias="q_mode")
+    postedFrom: Optional[str]
+    postedTo: Optional[str]
+
+
+class APIOpportunitiesRequestParams(BaseModel):
     ptype: Optional[PtypeEnum] = None
     solnum: Optional[str] = Field(description="Solicitation Number", default=None)
     noticeid: Optional[str] = Field(description="Notice ID", default=None)

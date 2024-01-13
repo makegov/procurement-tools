@@ -1,5 +1,8 @@
 from .models.entity import Entity
-from .models.opportunities import OpportunitiesRequestParams
+from .models.opportunities import (
+    OpportunitiesRequestParams,
+    APIOpportunitiesRequestParams,
+)
 from .uei import UEI
 from datetime import date, timedelta
 import httpx
@@ -96,10 +99,15 @@ class SAM:
         seed = "".join(choice(digits) for i in range(13))
         mode = params.get("mode", "ALL")
         active = params.get("active", "true")
-        BASE_URL = f"https://sam.gov/api/prod/sgs/v1/search/?random={seed}&index=opp&page=0&sort=-modifiedDate&size=1000&mode=search&responseType=json&qMode={mode}&is_active={active}"
+        url = f"https://sam.gov/api/prod/sgs/v1/search/?random={seed}&index=opp&page=0&sort=-modifiedDate&size=1000&mode=search&responseType=json&qMode={mode}&is_active={active}"
 
-        param_str = urlencode(params)
-        url = f"{BASE_URL}&{param_str}"
+        if mod_from_date := params.get("postedFrom"):
+            url += f"&modified_date.from={mod_from_date}-06:00"
+        if mod_to_date := params.get("postedTo"):
+            url += f"&modified_date.from={mod_to_date}-06:00"
+        url += f"&q={params.get('q')}"
+        if notice_type := params.get("notice_type"):
+            url += f"&notice_type={notice_type}"
         res = httpx.get(url)
         data = res.json()
         return data
@@ -114,14 +122,14 @@ class SAM:
 
         Args:
             params: A dict for the request parameters to the SAM API. As currently implemented, we use \
-            OpportunitiesRequestParams to check whether the parameters are valid.
+            APIOpportunitiesRequestParams to check whether the parameters are valid.
 
         Returns:
             A dict
         """
 
         try:
-            request_params = OpportunitiesRequestParams(**params).model_dump(
+            request_params = APIOpportunitiesRequestParams(**params).model_dump(
                 exclude_none=True
             )
         except ValidationError:

@@ -35,25 +35,23 @@ def entity(uei: str):
 def opportunities(
     *,
     q: str = "",
-    postedFrom: Optional[
-        str
-    ] = None,  # (datetime.now() - timedelta(days=364)).strftime("%Y-%m-%d"),
-    postedTo: Optional[str] = None,  # datetime.now().strftime("%Y-%m-%d"),
+    updatedFrom: Optional[str] = None,
+    updatedTo: Optional[str] = None,
     active: str = "true",
     mode: str = "ALL",
+    notice_type: Optional[str] = None
 ):
     """Get SAM opportunities' JSON data"""
-    params = {
-        "q": q,
-        "active": active,
-        "mode": mode,
-    }
-    if postedFrom:
-        params["modified_date.from"] = (postedFrom + "-06:00",)
-    if postedTo:
-        params["modified_date.to"] = (postedTo + "-06:00",)
-
-    res = SAM.get_opportunities(params)
+    res = SAM.get_opportunities(
+        dict(
+            q=q,
+            is_active=active,
+            mode=mode,
+            postedFrom=updatedFrom,
+            postedTo=updatedTo,
+            notice_type=notice_type,
+        )
+    )
     print(json.dumps(res))
 
 
