@@ -64,6 +64,8 @@ Check out [the docs](https://procurement-tools.readthedocs.io/en/latest/cli.html
 pip install procurement-tools
 ```
 
+The SAM API client requires that the local environment variable `SAM_API_KEY` be set. See the [SAM API Docs](https://open.gsa.gov/api/entity-api/#individual-personal-accounts) for information on obtaining an API key.
+
 ## License
 
 Apache 2.0
