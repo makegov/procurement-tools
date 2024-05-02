@@ -30,6 +30,7 @@ for source in SOURCES:
 
 ACRONYMS = sorted(ACRONYMS)
 
+
 class Glossary:
 
     @staticmethod
