@@ -19,8 +19,8 @@ class Socioeconomic:
         "8W": "WOSB",  # Economically Disadvantaged Women-Owned Small Business
         "A5": "VOSB",  # Veteran Owned Business
         "QF": "SDVOSB",  # Service-Disabled Veteran Owned Business
-        "XX": "HUBZone",  # SBA Certified HUBZone Small Business Concern
-        "JX": "HUBZone",  # Self Certified HUBZone Joint Venture
+        "XX": "HUBZONE",  # SBA Certified HUBZone Small Business Concern
+        "JX": "HUBZONE",  # Self Certified HUBZone Joint Venture
         "A6": "SDB",  # SBA 8(a) Participant
         "27": "SDB",  # Self Certified Small Disadvantaged Business
     }
