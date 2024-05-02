@@ -1,0 +1,3208 @@
+glossary:
+  AAHC:
+    longform:
+    description: 400 Years of African-American History Commission
+    cross_references:
+
+  ALBC:
+    longform:
+    description: Abraham Lincoln Bicentennial Commission
+    cross_references:
+
+  USAB:
+    longform:
+    description: Access Board
+    cross_references:
+
+  ACUS:
+    longform:
+    description: Administrative Conference of the U.S.
+    cross_references:
+
+  ACIR:
+    longform:
+    description: Advisory Commission on Intergovernmental Relations
+    cross_references:
+
+  ACHP:
+    longform:
+    description: Advisory Council on Historic Preservation
+    cross_references:
+
+  USADF:
+    longform:
+    description: African Development Foundation
+    cross_references:
+
+  USAID:
+    longform:
+    description: Agency for International Development
+    cross_references:
+
+  ABMC:
+    longform:
+    description: American Battle Monuments Commission
+    cross_references:
+
+  ARC:
+    longform:
+    description: Appalachian Regional Commission
+    cross_references:
+
+  AOC:
+    longform:
+    description: Architect of the Capitol
+    cross_references:
+
+  AFRH:
+    longform:
+    description: Armed Forces Retirement Home
+    cross_references:
+
+  GOLDWATER:
+    longform:
+    description: Barry Goldwater Scholarship and Excellence In Education Foundation
+    cross_references:
+
+  CIA:
+    longform:
+    description: Central Intelligence Agency
+    cross_references:
+
+  COLUMBUS:
+    longform:
+    description: Christopher Columbus Fellowship Foundation
+    cross_references:
+
+  HERITAGEABROAD:
+    longform:
+    description: Commission for the Preservation of America's Heritage Abroad
+    cross_references:
+
+  CFA:
+    longform:
+    description: Commission of Fine Arts
+    cross_references:
+
+  USCCR:
+    longform:
+    description: Commission on Civil Rights
+    cross_references:
+
+  ABILITYONE:
+    longform:
+    description: Committee for Purchase from People Who Are Blind or Severely Disabled
+    cross_references:
+
+  CFTC:
+    longform:
+    description: Commodity Futures Trading Commission
+    cross_references:
+
+  CBO:
+    longform:
+    description: Congressional Budget Office
+    cross_references:
+
+  CECC:
+    longform:
+    description: Congressional-Executive Commission on People's Republic of China
+    cross_references:
+
+  CFPB:
+    longform:
+    description: Consumer Financial Protection Bureau
+    cross_references:
+
+  CPSC:
+    longform:
+    description: Consumer Product Safety Commission
+    cross_references:
+
+  CNCS:
+    longform:
+    description: Corporation for National and Community Service
+    cross_references:
+
+  BRAND USA:
+    longform:
+    description: Corporation for Travel Promotion
+    cross_references:
+
+  USACE:
+    longform:
+    description: Army Corps of Engineers Civil Works
+    cross_references:
+
+  CIGIE:
+    longform:
+    description: Council of the Inspectors General on Integrity and Efficiency
+    cross_references:
+
+  CSOSA:
+    longform:
+    description: Court Services and Offender Supervision Agency
+    cross_references:
+
+  DNFSB:
+    longform:
+    description: Defense Nuclear Facilities Safety Board
+    cross_references:
+
+  DRA:
+    longform:
+    description: Delta Regional Authority
+    cross_references:
+
+  DENALI:
+    longform:
+    description: Denali Commission
+    cross_references:
+
+  USDA:
+    longform:
+    description: Department of Agriculture
+    cross_references:
+
+  DOC:
+    longform:
+    description: Department of Commerce
+    cross_references:
+
+  DOD:
+    longform:
+    description: Department of Defense
+    cross_references:
+
+  ED:
+    longform:
+    description: Department of Education
+    cross_references:
+
+  DOE:
+    longform:
+    description: Department of Energy
+    cross_references:
+
+  HHS:
+    longform:
+    description: Department of Health and Human Services
+    cross_references:
+
+  DHS:
+    longform:
+    description: Department of Homeland Security
+    cross_references:
+
+  HUD:
+    longform:
+    description: Department of Housing and Urban Development
+    cross_references:
+
+  DOJ:
+    longform:
+    description: Department of Justice
+    cross_references:
+
+  DOL:
+    longform:
+    description: Department of Labor
+    cross_references:
+
+  DOS:
+    longform:
+    description: Department of State
+    cross_references:
+
+  DOI:
+    longform:
+    description: Department of the Interior
+    cross_references:
+
+  TREAS:
+    longform:
+    description: Department of the Treasury
+    cross_references:
+
+  DOT:
+    longform:
+    description: Department of Transportation
+    cross_references:
+
+  VA:
+    longform:
+    description: Department of Veterans Affairs
+    cross_references:
+
+  DC COURTS:
+    longform:
+    description: District of Columbia Courts
+    cross_references:
+
+  EISENHOWERMEMORIAL:
+    longform:
+    description: Dwight D. Eisenhower Memorial Commission
+    cross_references:
+
+  EISENHOWERFELLOWSHIP:
+    longform:
+    description: Eisenhower Exchange Fellowship Program
+    cross_references:
+
+  EAC:
+    longform:
+    description: Election Assistance Commission
+    cross_references:
+
+  ERO:
+    longform:
+    description: Electric Reliability Organization
+    cross_references:
+
+  EPA:
+    longform:
+    description: Environmental Protection Agency
+    cross_references:
+
+  EEOC:
+    longform:
+    description: Equal Employment Opportunity Commission
+    cross_references:
+
+  EOP:
+    longform:
+    description: Executive Office of the President
+    cross_references:
+
+  EXIM:
+    longform:
+    description: Export-Import Bank of the United States
+    cross_references:
+
+  FCA:
+    longform:
+    description: Farm Credit Administration
+    cross_references:
+
+  FCS:
+    longform:
+    description: Farm Credit System
+    cross_references:
+
+  FCC:
+    longform:
+    description: Federal Communications Commission
+    cross_references:
+
+  FDIC:
+    longform:
+    description: Federal Deposit Insurance Corporation
+    cross_references:
+
+  FEC:
+    longform:
+    description: Federal Election Commission
+    cross_references:
+
+  FEMA:
+    longform:
+    description: Federal Emergency Management Agency- associated to Assistance Data
+    cross_references:
+
+  FFIEC:
+    longform:
+    description: Federal Financial Institutions Examination Council
+    cross_references:
+
+  FHLBB:
+    longform:
+    description: Federal Home Loan Bank System
+    cross_references:
+
+  FREDDIE MAC:
+    longform:
+    description: Federal Home Loan Mortgage Corporation
+    cross_references:
+
+  FHFA:
+    longform:
+    description: Federal Housing Finance Agency
+    cross_references:
+
+  FHFB:
+    longform:
+    description: Federal Housing Finance Board
+    cross_references:
+
+  FLRA:
+    longform:
+    description: Federal Labor Relations Authority
+    cross_references:
+
+  FMC:
+    longform:
+    description: Federal Maritime Commission
+    cross_references:
+
+  FMCS:
+    longform:
+    description: Federal Mediation and Conciliation Service
+    cross_references:
+
+  FMSHRC:
+    longform:
+    description: Federal Mine Safety and Health Review Commission
+    cross_references:
+
+  FANNIE MAE:
+    longform:
+    description: Federal National Mortgage Association
+    cross_references:
+
+  FPISC:
+    longform:
+    description: Federal Permitting Improvement Steering Council
+    cross_references:
+
+  THE FED:
+    longform:
+    description: Federal Reserve System, Board of Governors
+    cross_references:
+
+  FRTIB:
+    longform:
+    description: Federal Retirement Thrift Investment Board
+    cross_references:
+
+  FTC:
+    longform:
+    description: Federal Trade Commission
+    cross_references:
+
+  GSA:
+    longform:
+    description: General Services Administration
+    cross_references:
+
+  GAO:
+    longform:
+    description: Government Accountability Office
+    cross_references:
+
+  GCERC:
+    longform:
+    description: Gulf Coast Ecosystem Restoration Council
+    cross_references:
+
+  TRUMAN:
+    longform:
+    description: Harry S Truman Scholarship Foundation
+    cross_references:
+
+  IPAB:
+    longform:
+    description: Independent Payment Advisory Board
+    cross_references:
+
+  ILOC:
+    longform:
+    description: Indian Law and Order Commission
+    cross_references:
+
+  IAIA:
+    longform:
+    description: Institute of American Indian and Alaska Native Culture and Arts
+        Development
+    cross_references:
+
+  IMLS:
+    longform:
+    description: Institute of Museum and Library Services
+    cross_references:
+
+  IC:
+    longform:
+    description: Intelligence Community Staff
+    cross_references:
+
+  ICCWA:
+    longform:
+    description: Interagency Coordinating Council on Workforce Attachment
+    cross_references:
+
+  IAF:
+    longform:
+    description: Inter-American Foundation
+    cross_references:
+
+  USITC:
+    longform:
+    description: International Trade Commission
+    cross_references:
+
+  ICC:
+    longform:
+    description: Interstate Commerce Commission
+    cross_references:
+
+  MADISON:
+    longform:
+    description: James Madison Memorial Fellowship Foundation
+    cross_references:
+
+  JUSFC:
+    longform:
+    description: Japan-United States Friendship Commission
+    cross_references:
+
+  LEG ORGS:
+    longform:
+    description: Legislative Branch Boards and Commissions
+    cross_references:
+
+  LOC:
+    longform:
+    description: Library of Congress
+    cross_references:
+
+  MMC:
+    longform:
+    description: Marine Mammal Commission
+    cross_references:
+
+  MEDPAC:
+    longform:
+    description: Medicare Payment Advisory Commission
+    cross_references:
+
+  MSPB:
+    longform:
+    description: Merit Systems Protection Board
+    cross_references:
+
+  MCC:
+    longform:
+    description: Millennium Challenge Corporation
+    cross_references:
+
+  UDALL:
+    longform:
+    description: Morris K. Udall and Stewart L. Udall Foundation
+    cross_references:
+
+  NASA:
+    longform:
+    description: National Aeronautics and Space Administration
+    cross_references:
+
+  NARA:
+    longform:
+    description: National Archives and Records Administration
+    cross_references:
+
+  NARAB:
+    longform:
+    description: National Association of Registered Agents and Brokers
+    cross_references:
+
+  NCPC:
+    longform:
+    description: National Capital Planning Commission
+    cross_references:
+
+  NCLIS:
+    longform:
+    description: National Commission on Libraries and Information Science
+    cross_references:
+
+  NCD:
+    longform:
+    description: National Council on Disability
+    cross_references:
+
+  NCUA:
+    longform:
+    description: National Credit Union Administration
+    cross_references:
+
+  NEA:
+    longform:
+    description: National Endowment for the Arts
+    cross_references:
+
+  NEH:
+    longform:
+    description: National Endowment for the Humanities
+    cross_references:
+
+  NIB:
+    longform:
+    description: National Infrastructure Bank
+    cross_references:
+
+  NLRB:
+    longform:
+    description: National Labor Relations Board
+    cross_references:
+
+  NMB:
+    longform:
+    description: National Mediation Board
+    cross_references:
+
+  NRPCOIG:
+    longform:
+    description: National Railroad Passenger Corporation Office of the Inspector
+        General
+    cross_references:
+
+  NSF:
+    longform:
+    description: National Science Foundation
+    cross_references:
+
+  NTSB:
+    longform:
+    description: National Transportation Safety Board
+    cross_references:
+
+  NEIGHBORWORKS:
+    longform:
+    description: Neighborhood Reinvestment Corporation
+    cross_references:
+
+  NBRC:
+    longform:
+    description: Northern Border Regional Commission
+    cross_references:
+
+  NRC:
+    longform:
+    description: Nuclear Regulatory Commission
+    cross_references:
+
+  NWTRB:
+    longform:
+    description: Nuclear Waste Technical Review Board
+    cross_references:
+
+  OSHRC:
+    longform:
+    description: Occupational Safety and Health Review Commission
+    cross_references:
+
+  OGE:
+    longform:
+    description: Office of Government Ethics
+    cross_references:
+
+  ONHIR:
+    longform:
+    description: Office of Navajo and Hopi Indian Relocation
+    cross_references:
+
+  OPM:
+    longform:
+    description: Office of Personnel Management
+    cross_references:
+
+  OSC:
+    longform:
+    description: Office of Special Counsel
+    cross_references:
+
+  ARCTIC GAS:
+    longform:
+    description: Office of the Federal Coordinator for Alaska Natural Gas Transportation
+        Projects
+    cross_references:
+
+  OPIC:
+    longform:
+    description: Overseas Private Investment Corporation
+    cross_references:
+
+  PCORTF:
+    longform:
+    description: Patient-Centered Outcomes Research Trust Fund
+    cross_references:
+
+  PADC:
+    longform:
+    description: Pennsylvania Avenue Development Corporation
+    cross_references:
+
+  PRESIDIO:
+    longform:
+    description: Presidio Trust
+    cross_references:
+
+  PCLOB:
+    longform:
+    description: Privacy and Civil Liberties Oversight Board
+    cross_references:
+
+  PBRB:
+    longform:
+    description: Public Buildings Reform Board
+    cross_references:
+
+  PCAOB:
+    longform:
+    description: Public Company Accounting Oversight Board
+    cross_references:
+
+  RRB:
+    longform:
+    description: Railroad Retirement Board
+    cross_references:
+
+  RATB:
+    longform:
+    description: Recovery Accountability and Transparency Board
+    cross_references:
+
+  SEC:
+    longform:
+    description: Securities and Exchange Commission
+    cross_references:
+
+  SIPC:
+    longform:
+    description: Securities Investor Protection Corporation
+    cross_references:
+
+  SSS:
+    longform:
+    description: Selective Service System
+    cross_references:
+
+  SBA:
+    longform:
+    description: Small Business Administration
+    cross_references:
+
+  SI:
+    longform:
+    description: Smithsonian Institution
+    cross_references:
+
+  SSA:
+    longform:
+    description: Social Security Administration
+    cross_references:
+
+  SJI:
+    longform:
+    description: State Justice Institute
+    cross_references:
+
+  STB:
+    longform:
+    description: Surface Transportation Board
+    cross_references:
+
+  TVA:
+    longform:
+    description: Tennessee Valley Authority
+    cross_references:
+
+  JUD BRANCH:
+    longform:
+    description: The Judicial Branch
+    cross_references:
+
+  LEG BRANCH:
+    longform:
+    description: The Legislative Branch
+    cross_references:
+
+  UMWAHRF:
+    longform:
+    description: United Mine Workers of America Health and Retirement Funds
+    cross_references:
+
+  CSB:
+    longform:
+    description: United States Chemical Safety Board
+    cross_references:
+
+  USCC:
+    longform:
+    description: United States-China Economic and Security Review Commission
+    cross_references:
+
+  USCIRF:
+    longform:
+    description: United States Commission on International Religious Freedom
+    cross_references:
+
+  CAVC:
+    longform:
+    description: United States Court of Appeals for Veterans Claims
+    cross_references:
+
+  USECFUND:
+    longform:
+    description: United States Enrichment Corporation Fund
+    cross_references:
+
+  GPO:
+    longform:
+    description: United States Government Publishing Office
+    cross_references:
+
+  USHMM:
+    longform:
+    description: United States Holocaust Memorial Museum
+    cross_references:
+
+  USIP:
+    longform:
+    description: United States Institute of Peace
+    cross_references:
+
+  USAGM:
+    longform:
+    description: U.S. Agency for Global Media
+    cross_references:
+
+  CONGRESS:
+    longform:
+    description: U.S. Congress
+    cross_references:
+
+  USICH:
+    longform:
+    description: U.S. Interagency Council on Homelessness
+    cross_references:
+
+  DFC:
+    longform:
+    description: U.S. International Development Finance Corporation
+    cross_references:
+
+  USPS:
+    longform:
+    description: U.S. Postal Service
+    cross_references:
+
+  USTAXCOURT:
+    longform:
+    description: U.S. Tax Court
+    cross_references:
+
+  VEF:
+    longform:
+    description: Vietnam Education Foundation
+    cross_references:
+
+  WW1CC:
+    longform:
+    description: World War I Centennial Commission
+    cross_references:
+
+  AITQ:
+    longform:
+    description: Academic Improvement and Teacher Quality Programs
+    cross_references:
+
+  ACF:
+    longform:
+    description: Administration for Children and Families
+    cross_references:
+
+  ACL:
+    longform:
+    description: Administration for Community Living
+    cross_references:
+
+  AOA:
+    longform:
+    description: Administration on Aging
+    cross_references:
+
+  ACFR:
+    longform:
+    description: Administrative Committee of the Federal Register
+    cross_references:
+
+  AO:
+    longform:
+    description: Office of the Administrator
+    cross_references:
+
+  ARB:
+    longform:
+    description: Administrative Review Board
+    cross_references:
+
+  ADF:
+    longform:
+    description: African Development Fund
+    cross_references:
+
+  AHRQ:
+    longform:
+    description: Agency for Healthcare Research and Quality
+    cross_references:
+
+  ATSDR:
+    longform:
+    description: Agency for Toxic Substances and Disease Registry
+    cross_references:
+
+  AMS:
+    longform:
+    description: Agricultural Marketing Service
+    cross_references:
+
+  ARS:
+    longform:
+    description: Agricultural Research Service
+    cross_references:
+
+  ASCS:
+    longform:
+    description: Agricultural Stabilization and Conservation Service
+    cross_references:
+
+  AFCA:
+    longform:
+    description: Air Force Communications Agency
+    cross_references:
+
+  AFDC:
+    longform:
+    description: Air Force Doctrine Center
+    cross_references:
+
+  AFMC:
+    longform:
+    description: Air Force Materiel Command
+    cross_references:
+
+  AFPC:
+    longform:
+    description: Air Force Personnel Center
+    cross_references:
+
+  ANG:
+    longform:
+    description: Air National Guard
+    cross_references:
+
+  AWS:
+    longform:
+    description: Air Weather Service
+    cross_references:
+
+  APA:
+    longform:
+    description: Alaska Power Administration
+    cross_references:
+
+  TTB:
+    longform:
+    description: Alcohol and Tobacco Tax and Trade Bureau
+    cross_references:
+
+  AARCC:
+    longform:
+    description: Alternative Agricultural Research and Commercialization Center
+    cross_references:
+
+  AIT:
+    longform:
+    description: American Institute In Taiwan
+    cross_references:
+
+  APH:
+    longform:
+    description: American Printing House for the Blind
+    cross_references:
+
+  AMES:
+    longform:
+    description: Ames Site Office
+    cross_references:
+
+  APHIS:
+    longform:
+    description: Animal and Plant Health Inspection Service
+    cross_references:
+
+  AMC:
+    longform:
+    description: U.S. Army Materiel Command
+    cross_references:
+
+  ARCTIC:
+    longform:
+    description: Arctic Research Commission
+    cross_references:
+
+  ANL:
+    longform:
+    description: Argonne Site Office
+    cross_references:
+
+  ADB:
+    longform:
+    description: Asian Development Bank
+    cross_references:
+
+  APEC:
+    longform:
+    description: Asia-Pacific Economic Cooperation
+    cross_references:
+
+  OARM:
+    longform:
+    description: Assistant Administrator for Administration and Resources Management
+    cross_references:
+
+  OAR:
+    longform:
+    description: Assistant Administrator for Air and Radiation
+    cross_references:
+
+  OECA:
+    longform:
+    description: Assistant Administrator for Enforcement and Compliance Assurance
+    cross_references:
+
+  OITA:
+    longform:
+    description: Assistant Administrator for International and Tribal Affairs
+    cross_references:
+
+  OLEM:
+    longform:
+    description: Assistant Administrator for Land and Emergency Management
+    cross_references:
+
+  ORD:
+    longform:
+    description: Assistant Administrator for Research and Development
+    cross_references:
+
+  OW:
+    longform:
+    description: Assistant Administrator for Water
+    cross_references:
+
+  BC:
+    longform:
+    description: Banks for Cooperatives
+    cross_references:
+
+  BRB:
+    longform:
+    description: Benefits Review Board
+    cross_references:
+
+  LBNL:
+    longform:
+    description: Berkeley Site Office
+    cross_references:
+
+  BCA:
+    longform:
+    description: Board of Contract Appeals
+    cross_references:
+
+  BVA:
+    longform:
+    description: Board of Veterans Appeals
+    cross_references:
+
+  BGN:
+    longform:
+    description: Board on Geographic Names
+    cross_references:
+
+  BPA:
+    longform:
+    description: Bonneville Power Marketing Administration
+    cross_references:
+
+  USBG:
+    longform:
+    description: Botanic Garden
+    cross_references:
+
+  BBG:
+    longform:
+    description: Broadcasting Board of Governors
+    cross_references:
+
+  BNL:
+    longform:
+    description: Brookhaven Site Office
+    cross_references:
+
+  EAB:
+    longform:
+    description: Bureau of Economic Analysis
+    cross_references:
+
+  EB:
+    longform:
+    description: Bureau of Economic and Business Affairs
+    cross_references:
+
+  BEP:
+    longform:
+    description: Bureau of Engraving and Printing
+    cross_references:
+
+  BIS:
+    longform:
+    description: Bureau of Industry and Security
+    cross_references:
+
+  BIE:
+    longform:
+    description: Bureau of International Expositions
+    cross_references:
+
+  ILAB:
+    longform:
+    description: Bureau of International Labor Affairs
+    cross_references:
+
+  ISN:
+    longform:
+    description: Bureau of International Security and Nonproliferation
+    cross_references:
+
+  BLS:
+    longform:
+    description: Bureau of Labor Statistics
+    cross_references:
+
+  BLM:
+    longform:
+    description: Bureau of Land Management
+    cross_references:
+
+  BOEM:
+    longform:
+    description: Bureau of Ocean Energy Management
+    cross_references:
+
+  PM:
+    longform:
+    description: Bureau of Politico-Military Affairs
+    cross_references:
+
+  BOR:
+    longform:
+    description: Bureau of Reclamation
+    cross_references:
+
+  BSEE:
+    longform:
+    description: Bureau of Safety and Environmental Enforcement
+    cross_references:
+
+  EAST-WEST CENTER:
+    longform:
+    description: Center for Cultural and Technical Interchange Between East and
+        West
+    cross_references:
+
+  CFBNP:
+    longform:
+    description: Center for Faith-Based and Neighborhood Partnerships
+    cross_references:
+
+  CMV:
+    longform:
+    description: Center for Minority Veterans
+    cross_references:
+
+  CNPP:
+    longform:
+    description: Center for Nutrition Policy and Promotion
+    cross_references:
+
+  CWV:
+    longform:
+    description: Center for Women Veterans
+    cross_references:
+
+  CDC:
+    longform:
+    description: Centers for Disease Control and Prevention
+    cross_references:
+
+  CMS:
+    longform:
+    description: Centers for Medicare and Medicaid Services
+    cross_references:
+
+  CUPCAO:
+    longform:
+    description: Central Utah Project Completion Act Office
+    cross_references:
+
+  OCE:
+    longform:
+    description: Office of the Chief Economist
+    cross_references:
+
+  OCFO:
+    longform:
+    description: Office of the Chief Financial Officer
+    cross_references:
+
+  CSAC:
+    longform:
+    description: Citizen's Stamp Advisory Committee
+    cross_references:
+
+  CONNIE LEE:
+    longform:
+    description: College Construction Loan Insurance Association
+    cross_references:
+
+  CCAMLR:
+    longform:
+    description: Commission for the Conservation of Antarctic Marine Living Resources
+    cross_references:
+
+  CSCE:
+    longform:
+    description: Commission on Security and Cooperation In Europe
+    cross_references:
+
+  CITA:
+    longform:
+    description: Committee for the Implementation of Textile Agreements
+    cross_references:
+
+  CCC:
+    longform:
+    description: Commodity Credit Corporation
+    cross_references:
+
+  CRS:
+    longform:
+    description: Community Relations Service
+    cross_references:
+
+  CGIAR:
+    longform:
+    description: Consultative Group on International Agricultural Research
+    cross_references:
+
+  CITES:
+    longform:
+    description: Convention on International Trade In Endangered Species of Wild
+        Fauna and Flora
+    cross_references:
+
+  CPB:
+    longform:
+    description: Corporation for Public Broadcasting
+    cross_references:
+
+  CEA:
+    longform:
+    description: Council of Economic Advisors
+    cross_references:
+
+  CEQ:
+    longform:
+    description: Council on Environmental Quality
+    cross_references:
+
+  DARPA:
+    longform:
+    description: Defense Advanced Research Projects Agency
+    cross_references:
+
+  DECA:
+    longform:
+    description: Defense Commissary Agency
+    cross_references:
+
+  DCAA:
+    longform:
+    description: Defense Contract Audit Agency
+    cross_references:
+
+  DCMA:
+    longform:
+    description: Defense Contract Management Agency
+    cross_references:
+
+  DCSA:
+    longform:
+    description: Defense Counterintelligence and Security Agency
+    cross_references:
+
+  DFAS:
+    longform:
+    description: Defense Finance and Accounting Service
+    cross_references:
+
+  DHA:
+    longform:
+    description: Defense Health Agency
+    cross_references:
+
+  DISA:
+    longform:
+    description: Defense Information Systems Agency
+    cross_references:
+
+  DIA:
+    longform:
+    description: Defense Intelligence Agency
+    cross_references:
+
+  DLA:
+    longform:
+    description: Defense Logistics Agency
+    cross_references:
+
+  DMA:
+    longform:
+    description: Defense Media Activity
+    cross_references:
+
+  DMEA:
+    longform:
+    description: Defense Microelectronics Activity
+    cross_references:
+
+  DSCA:
+    longform:
+    description: Defense Security Cooperation Agency
+    cross_references:
+
+  DTRA:
+    longform:
+    description: Defense Threat Reduction Agency
+    cross_references:
+
+  DC:
+    longform:
+    description: Denali Commission
+    cross_references:
+
+  DAB:
+    longform:
+    description: Departmental Appeals Board
+    cross_references:
+
+  DO:
+    longform:
+    description: Departmental Offices
+    cross_references:
+
+  DODEA:
+    longform:
+    description: Department of Defense Education Activity
+    cross_references:
+
+  USAF:
+    longform:
+    description: Department of the Air Force
+    cross_references:
+
+  USA:
+    longform:
+    description: Department of the Army
+    cross_references:
+
+  USN:
+    longform:
+    description: Department of the Navy
+    cross_references:
+
+  DCCOMM:
+    longform:
+    description: Deputy Commissioner - Communications
+    cross_references:
+
+  DCHR:
+    longform:
+    description: Deputy Commissioner - Human Resources
+    cross_references:
+
+  DCLCA:
+    longform:
+    description: Deputy Commissioner - Legislation and Congressional Affairs
+    cross_references:
+
+  DCO:
+    longform:
+    description: Deputy Commissioner - Operations
+    cross_references:
+
+  DCS:
+    longform:
+    description: Deputy Commissioner - Systems
+    cross_references:
+
+  OMB:
+    longform:
+    description: OMB, Except Director
+    cross_references:
+
+  NCA:
+    longform:
+    description: National Council on the Arts
+    cross_references:
+
+  DEA:
+    longform:
+    description: Drug Enforcement Administration
+    cross_references:
+
+  EDA:
+    longform:
+    description: Economic Development Administration
+    cross_references:
+
+  ERS:
+    longform:
+    description: Economic Research Service
+    cross_references:
+
+  EBSA:
+    longform:
+    description: Employee Benefits Security Administration
+    cross_references:
+
+  ECAB:
+    longform:
+    description: Employees Compensation Appeals Board
+    cross_references:
+
+  ETA:
+    longform:
+    description: Employment and Training Administration
+    cross_references:
+
+  ESA:
+    longform:
+    description: Employment Standards Administration
+    cross_references:
+
+  EIA:
+    longform:
+    description: Energy Information Administration
+    cross_references:
+
+  EBRD:
+    longform:
+    description: European Bank for Reconstruction and Development
+    cross_references:
+
+  EOIR:
+    longform:
+    description: Executive Office for Immigration Review
+    cross_references:
+
+  OES:
+    longform:
+    description: Office of Executive Secretariat
+    cross_references:
+
+  EARB:
+    longform:
+    description: Export Administration Review Board
+    cross_references:
+
+  FCB:
+    longform:
+    description: Farm Credit Banks
+    cross_references:
+
+  FCSIC:
+    longform:
+    description: Farm Credit System Insurance Corporation
+    cross_references:
+
+  FmHA:
+    longform:
+    description: Farmers Home Administration
+    cross_references:
+
+  FSA:
+    longform:
+    description: Federal Student Aid
+    cross_references:
+
+  FAS:
+    longform:
+    description: Foreign Agricultural Service
+    cross_references:
+
+  FARMER MAC:
+    longform:
+    description: Federal Agricultural Mortgage Corporation
+    cross_references:
+
+  FAA:
+    longform:
+    description: Federal Aviation Administration
+    cross_references:
+
+  FBI:
+    longform:
+    description: Federal Bureau of Investigation
+    cross_references:
+
+  FCAH:
+    longform:
+    description: Federal Council on the Arts and the Humanities
+    cross_references:
+
+  FCIC:
+    longform:
+    description: Federal Crop Insurance Corporation
+    cross_references:
+
+  FERC:
+    longform:
+    description: Federal Energy Regulatory Commission
+    cross_references:
+
+  FFB:
+    longform:
+    description: Federal Financing Bank
+    cross_references:
+
+  FHWA:
+    longform:
+    description: Federal Highway Administration
+    cross_references:
+
+  FHLBanks:
+    longform:
+    description: Federal Home Loan Banks
+    cross_references:
+
+  FICE:
+    longform:
+    description: Federal Interagency Committee on Education
+    cross_references:
+
+  FICB:
+    longform:
+    description: Federal Intermediate Credit Banks
+    cross_references:
+
+  FJC:
+    longform:
+    description: Federal Judicial Center
+    cross_references:
+
+  FLBA:
+    longform:
+    description: Federal Land Bank Associations
+    cross_references:
+
+  FLB:
+    longform:
+    description: Federal Land Banks
+    cross_references:
+
+  FLETC:
+    longform:
+    description: Federal Law Enforcement Training Center
+    cross_references:
+
+  FLICC:
+    longform:
+    description: Federal Library and Information Center Committee
+    cross_references:
+
+  MSHFRC:
+    longform:
+    description: Federal Mine Safety and Health Review Commission
+    cross_references:
+
+  FMCSA:
+    longform:
+    description: Federal Motor Carrier Safety Administration
+    cross_references:
+
+  FPRAC:
+    longform:
+    description: Federal Prevailing Rate Advisory Committee
+    cross_references:
+
+  FD:
+    longform:
+    description: Federal Public Defenders
+    cross_references:
+
+  FRA:
+    longform:
+    description: Federal Railroad Administration
+    cross_references:
+
+  FTA:
+    longform:
+    description: Federal Transit Administration
+    cross_references:
+
+  FNAL:
+    longform:
+    description: Fermi Site Office
+    cross_references:
+
+  INL:
+    longform:
+    description: Field Office, Idaho
+    cross_references:
+
+  ORNL:
+    longform:
+    description: Oak Ridge Office
+    cross_references:
+
+  FINCEN:
+    longform:
+    description: Financial Crime Enforcement Network
+    cross_references:
+
+  FMS:
+    longform:
+    description: Financial Management Service
+    cross_references:
+
+  FAO:
+    longform:
+    description: Food and Agriculture Organization
+    cross_references:
+
+  FDA:
+    longform:
+    description: Food and Drug Administration
+    cross_references:
+
+  FNS:
+    longform:
+    description: Food and Nutrition Service
+    cross_references:
+
+  FSIS:
+    longform:
+    description: Food Safety and Inspection Service
+    cross_references:
+
+  FSI:
+    longform:
+    description: Foreign Service Institute
+    cross_references:
+
+  FS:
+    longform:
+    description: Forest Service
+    cross_references:
+
+  FIPSE:
+    longform:
+    description: Fund for the Improvement of Postsecondary Education
+    cross_references:
+
+  GATT:
+    longform:
+    description: General Agreement on Tariffs and Trade
+    cross_references:
+
+  GMI:
+    longform:
+    description: Gorgas Memorial Institute of Tropical and Preventative Medicine
+    cross_references:
+
+  GINNIE MAE:
+    longform:
+    description: Government National Mortgage Association
+    cross_references:
+
+  GIPSA:
+    longform:
+    description: Grain Inspection, Packers and Stockyards Administration
+    cross_references:
+
+  GLFC:
+    longform:
+    description: Great Lakes Fishery Commission
+    cross_references:
+
+  HCCH:
+    longform:
+    description: Hague Conference on Private International Law
+    cross_references:
+
+  HRSA:
+    longform:
+    description: Health Resources and Services Administration
+    cross_references:
+
+  I&M CANAL:
+    longform:
+    description: IL and MI Canal National Heritage Corridor Commission
+    cross_references:
+
+  OFAS:
+    longform:
+    description: Office of the Fiscal Assistant Secretary
+    cross_references:
+
+  OS:
+    longform:
+    description: Office of the Secretary
+    cross_references:
+
+  SECDEF:
+    longform:
+    description: Immediate Office of the Secretary of Defense
+    cross_references:
+
+  SECNAV:
+    longform:
+    description: Immediate Office of the Secretary of the Navy
+    cross_references:
+
+  OST:
+    longform:
+    description: Office of the Special Trustee for American Indians
+    cross_references:
+
+  S&T:
+    longform:
+    description: Office of the Under Secretary for Science and Technology
+    cross_references:
+
+  BIA:
+    longform:
+    description: Indian Affairs
+    cross_references:
+
+  IACB:
+    longform:
+    description: Indian Arts and Crafts Board
+    cross_references:
+
+  IHS:
+    longform:
+    description: Indian Health Service
+    cross_references:
+
+  ISOO:
+    longform:
+    description: Information Security Oversight Office
+    cross_references:
+
+  IES:
+    longform:
+    description: Institute of Education Sciences
+    cross_references:
+
+  OIA:
+    longform:
+    description: Insular Affairs
+    cross_references:
+
+  ICEPD:
+    longform:
+    description: Interagency Committee on Employment of People With Disabilities
+    cross_references:
+
+  IADB:
+    longform:
+    description: Inter-American Development Bank
+    cross_references:
+
+  IICA:
+    longform:
+    description: Inter-American Institute for Cooperation on Agriculture
+    cross_references:
+
+  IATTC:
+    longform:
+    description: Inter-American Tropical Tuna Commission
+    cross_references:
+
+  IRS:
+    longform:
+    description: Internal Revenue Service
+    cross_references:
+
+  IARC:
+    longform:
+    description: International Agency for Research on Cancer
+    cross_references:
+
+  IAU:
+    longform:
+    description: International Astronomical Union
+    cross_references:
+
+  IAEA:
+    longform:
+    description: International Atomic Energy Agency
+    cross_references:
+
+  WORLD BANK:
+    longform:
+    description: International Bank for Reconstruction and Development
+    cross_references:
+
+  IBWC:
+    longform:
+    description: 'International Boundary and Water Commission: U.S.-Mexico'
+    cross_references:
+
+  BITD:
+    longform:
+    description: International Bureau for the Publication of Customs Tariffs
+    cross_references:
+
+  PCA:
+    longform:
+    description: International Bureau of the Permanent Court of Arbitration
+    cross_references:
+
+  BIPM:
+    longform:
+    description: International Bureau of Weights and Measures
+    cross_references:
+
+  ICCROM:
+    longform:
+    description: International Center -- Study of the Preservation and Restoration
+        of Cultural Property
+    cross_references:
+
+  ICAO:
+    longform:
+    description: International Civil Aviation Organization
+    cross_references:
+
+  ICO:
+    longform:
+    description: International Commission on Optics
+    cross_references:
+
+  ICCAT:
+    longform:
+    description: International Commission for the Conservation of Atlantic Tunas
+    cross_references:
+
+  ICRC:
+    longform:
+    description: International Committee of the Red Cross
+    cross_references:
+
+  ICSG:
+    longform:
+    description: International Copper Study Group
+    cross_references:
+
+  ICAC:
+    longform:
+    description: International Cotton Advisory Committee
+    cross_references:
+
+  ICES:
+    longform:
+    description: International Council for the Exploration of the Sea
+    cross_references:
+
+  ICSU:
+    longform:
+    description: International Council of Scientific Unions
+    cross_references:
+
+  INTERPOL:
+    longform:
+    description: International Criminal Police Organization
+    cross_references:
+
+  IDA:
+    longform:
+    description: International Development Association
+    cross_references:
+
+  IFC:
+    longform:
+    description: International Finance Corporation
+    cross_references:
+
+  IFAD:
+    longform:
+    description: International Fund for Agricultural Development
+    cross_references:
+
+  IGU:
+    longform:
+    description: International Geographical Union
+    cross_references:
+
+  IGC:
+    longform:
+    description: International Grains Council
+    cross_references:
+
+  IHO:
+    longform:
+    description: International Hydrographic Organization
+    cross_references:
+
+  IIC:
+    longform:
+    description: International Institute for Cotton
+    cross_references:
+
+  UNIDROIT:
+    longform:
+    description: International Institute for the Unification of Private Law
+    cross_references:
+
+  IJSG:
+    longform:
+    description: International Jute Study Group
+    cross_references:
+
+  ILO:
+    longform:
+    description: International Labor Organization
+    cross_references:
+
+  ILZSG:
+    longform:
+    description: International Lead and Zinc Study Group
+    cross_references:
+
+  IMO:
+    longform:
+    description: International Maritime Organization
+    cross_references:
+
+  IMU:
+    longform:
+    description: International Mathematical Union
+    cross_references:
+
+  IMF:
+    longform:
+    description: International Monetary Fund
+    cross_references:
+
+  INRO:
+    longform:
+    description: International Natural Rubber Organization
+    cross_references:
+
+  OIE:
+    longform:
+    description: International Office of Epizootics
+    cross_references:
+
+  OIV:
+    longform:
+    description: International Office of the Vine and Wine
+    cross_references:
+
+  OIML:
+    longform:
+    description: International Organization for Legal Metrology
+    cross_references:
+
+  IOM:
+    longform:
+    description: International Organization for Migration
+    cross_references:
+
+  IPHC:
+    longform:
+    description: International Pacific Halibut Commission
+    cross_references:
+
+  IRSG:
+    longform:
+    description: International Rubber Study Group
+    cross_references:
+
+  ISTA:
+    longform:
+    description: International Seed Testing Association
+    cross_references:
+
+  ISO:
+    longform:
+    description: International Sugar Organization
+    cross_references:
+
+  ITU:
+    longform:
+    description: International Telecommunication Union
+    cross_references:
+
+  ITA:
+    longform:
+    description: International Trade Administration
+    cross_references:
+
+  ITTO:
+    longform:
+    description: International Tropical Timber Organization
+    cross_references:
+
+  IUPAB:
+    longform:
+    description: International Union for Pure and Applied Biophysics
+    cross_references:
+
+  INQUA:
+    longform:
+    description: International Union for Quaternary Research
+    cross_references:
+
+  UPOV:
+    longform:
+    description: International Union for the Protection of New Varieties of Plants
+    cross_references:
+
+  IUBMB:
+    longform:
+    description: International Union of Biochemistry and Molecular Biology
+    cross_references:
+
+  IUBS:
+    longform:
+    description: International Union of Biological Sciences
+    cross_references:
+
+  IUCr:
+    longform:
+    description: International Union of Crystallography
+    cross_references:
+
+  IUGG:
+    longform:
+    description: International Union of Geodesy and Geophysics
+    cross_references:
+
+  IUMS:
+    longform:
+    description: International Union of Microbiological Societies
+    cross_references:
+
+  IUNS:
+    longform:
+    description: International Union of Nutritional Sciences
+    cross_references:
+
+  IUPS:
+    longform:
+    description: International Union of Physiological Sciences
+    cross_references:
+
+  IUPSYS:
+    longform:
+    description: International Union of Psychological Science
+    cross_references:
+
+  IUPAC:
+    longform:
+    description: International Union of Pure and Applied Chemistry
+    cross_references:
+
+  IUPAP:
+    longform:
+    description: International Union of Pure and Applied Physics
+    cross_references:
+
+  URSI:
+    longform:
+    description: International Union of Radio Sciences
+    cross_references:
+
+  IUTAM:
+    longform:
+    description: International Union of Theoretical and Applied Mechanics
+    cross_references:
+
+  IWC:
+    longform:
+    description: International Whaling Commission
+    cross_references:
+
+  IPU:
+    longform:
+    description: Interparliamentary Union
+    cross_references:
+
+  KENNEDY CENTER:
+    longform:
+    description: John F. Kennedy Center for the Performing Arts
+    cross_references:
+
+  JSC:
+    longform:
+    description: Johnson Space Center
+    cross_references:
+
+  JIEDDO:
+    longform:
+    description: Joint Improvised Explosive Device Defeat Organization
+    cross_references:
+
+  USJC:
+    longform:
+    description: Judicial Conference of the United States
+    cross_references:
+
+  KSC:
+    longform:
+    description: Kennedy Space Center
+    cross_references:
+
+  LaRC:
+    longform:
+    description: Langley Research Center
+    cross_references:
+
+  LSC:
+    longform:
+    description: Legal Services Corporation
+    cross_references:
+
+  OMS:
+    longform:
+    description: Management Services
+    cross_references:
+
+  MARAD:
+    longform:
+    description: Maritime Administration
+    cross_references:
+
+  MSFC:
+    longform:
+    description: Marshall Space Flight Center
+    cross_references:
+
+  MEP:
+    longform:
+    description: Migrant Education Programs
+    cross_references:
+
+  MBCC:
+    longform:
+    description: Migratory Bird Conservation Commission
+    cross_references:
+
+  MSHA:
+    longform:
+    description: Mine Safety and Health Administration
+    cross_references:
+
+  MBDA:
+    longform:
+    description: Minority Business Development Agency
+    cross_references:
+
+  MDA:
+    longform:
+    description: Missile Defense Agency
+    cross_references:
+
+  MISS:
+    longform:
+    description: Mississippi River Commission
+    cross_references:
+
+  MIGA:
+    longform:
+    description: Multilateral Investment Guarantee Agency
+    cross_references:
+
+  MFO:
+    longform:
+    description: Multinational Force and Observers
+    cross_references:
+
+  APL:
+    longform:
+    description: NASA Management Office -- Applied Physics Laboratory
+    cross_references:
+
+  JPL:
+    longform:
+    description: NASA Resident Office, Jet Propulsion Laboratory
+    cross_references:
+
+  NSSC:
+    longform:
+    description: NASA Shared Services Center
+    cross_references:
+
+  NASS:
+    longform:
+    description: National Agricultural Statistics Service
+    cross_references:
+
+  NAD:
+    longform:
+    description: National Appeals Division
+    cross_references:
+
+  NAGB:
+    longform:
+    description: National Assessment Governing Board
+    cross_references:
+
+  NBS:
+    longform:
+    description: National Biological Survey
+    cross_references:
+
+  NCES:
+    longform:
+    description: National Center for Education Statistics
+    cross_references:
+
+  NCHS:
+    longform:
+    description: National Center for Health Statistics
+    cross_references:
+
+  9-11 COMMISSION:
+    longform:
+    description: National Commission on Terrorist Attacks Upon the United States
+    cross_references:
+
+  NCS:
+    longform:
+    description: National Communications System
+    cross_references:
+
+  NCH:
+    longform:
+    description: National Council on the Humanities
+    cross_references:
+
+  NDU:
+    longform:
+    description: National Defense University
+    cross_references:
+
+  NED:
+    longform:
+    description: National Endowment for Democracy
+    cross_references:
+
+  NETL:
+    longform:
+    description: National Energy Technology Laboratory
+    cross_references:
+
+  NGA:
+    longform:
+    description: National Geospatial-Intelligence Agency
+    cross_references:
+
+  NGB:
+    longform:
+    description: National Guard Bureau
+    cross_references:
+
+  NHTSA:
+    longform:
+    description: National Highway Traffic Safety Administration
+    cross_references:
+
+  NHPRC:
+    longform:
+    description: National Historical Publications and Records Commission
+    cross_references:
+
+  NIGC:
+    longform:
+    description: National Indian Gaming Commission
+    cross_references:
+
+  NIL:
+    longform:
+    description: National Institute for Literacy
+    cross_references:
+
+  NIE:
+    longform:
+    description: National Institute of Education
+    cross_references:
+
+  NIFA:
+    longform:
+    description: National Institute of Food and Agriculture
+    cross_references:
+
+  NIST:
+    longform:
+    description: National Institute of Standards and Technology
+    cross_references:
+
+  NIDILRR:
+    longform:
+    description: National Institute on Disability and Rehabilitation Research
+    cross_references:
+
+  NIH:
+    longform:
+    description: National Institutes of Health
+    cross_references:
+
+  NNSA:
+    longform:
+    description: National Nuclear Security Administration
+    cross_references:
+
+  NOAA:
+    longform:
+    description: National Oceanic and Atmospheric Administration
+    cross_references:
+
+  NPS:
+    longform:
+    description: National Park Service
+    cross_references:
+
+  AMTRAK:
+    longform:
+    description: National Railroad Passenger Corporation
+    cross_references:
+
+  NRO:
+    longform:
+    description: National Reconnaissance Office
+    cross_references:
+
+  NSB:
+    longform:
+    description: National Science Board
+    cross_references:
+
+  NSA:
+    longform:
+    description: National Security Agency/Central Security Service
+    cross_references:
+
+  NSC:
+    longform:
+    description: National Security Council
+    cross_references:
+
+  NSIIC:
+    longform:
+    description: National Sheep Industry Improvement Center
+    cross_references:
+
+  NTIS:
+    longform:
+    description: National Technical Information Service
+    cross_references:
+
+  NTID:
+    longform:
+    description: National Technical Institute for the Deaf
+    cross_references:
+
+  NTIA:
+    longform:
+    description: National Telecommunications and Information Administration
+    cross_references:
+
+  NATO PA:
+    longform:
+    description: NATO Parliamentary Assembly
+    cross_references:
+
+  NRCS:
+    longform:
+    description: Natural Resources Conservation Service
+    cross_references:
+
+  NAVFAC:
+    longform:
+    description: Naval Facilities Engineering Command
+    cross_references:
+
+  NAVSEA:
+    longform:
+    description: Naval Sea Systems Command
+    cross_references:
+
+  NAVSPECWARCOM:
+    longform:
+    description: Naval Special Warfare Command
+    cross_references:
+
+  NAVSUP:
+    longform:
+    description: Naval Supply Systems Command
+    cross_references:
+
+  NADB:
+    longform:
+    description: North American Development Bank
+    cross_references:
+
+  NASCO:
+    longform:
+    description: North Atlantic Salmon Conservation Organization
+    cross_references:
+
+  NATO:
+    longform:
+    description: North Atlantic Treaty Organization
+    cross_references:
+
+  NPAFC:
+    longform:
+    description: North Pacific Anadromous Fish Commission
+    cross_references:
+
+  PICES:
+    longform:
+    description: North Pacific Marine Science Organization
+    cross_references:
+
+  NAFO:
+    longform:
+    description: Northwest Atlantic Fisheries Organization
+    cross_references:
+
+  OSHA:
+    longform:
+    description: Occupational Safety and Health Administration
+    cross_references:
+
+  OCR:
+    longform:
+    description: Office of Congressional Relations
+    cross_references:
+
+  OA:
+    longform:
+    description: Office of Administration
+    cross_references:
+
+  OALJ:
+    longform:
+    description: Office of Administrative Law Judges
+    cross_references:
+
+  OAS:
+    longform:
+    description: Organization of American States
+    cross_references:
+
+  OAO:
+    longform:
+    description: Office of Advocacy and Outreach
+    cross_references:
+
+  OBEMLA:
+    longform:
+    description: Office of Bilingual Education and Minority Languages Affairs
+    cross_references:
+
+  OBPA:
+    longform:
+    description: Office of Budget and Program Analysis
+    cross_references:
+
+  OCTAE:
+    longform:
+    description: Office of Career, Technical, and Adult Education
+    cross_references:
+
+  OC:
+    longform:
+    description: Office of Communication
+    cross_references:
+
+  OCO:
+    longform:
+    description: Office of Communications and Outreach
+    cross_references:
+
+  OOC:
+    longform:
+    description: Office of Compliance
+    cross_references:
+
+  OCL:
+    longform:
+    description: Office of Congressional and Legislative Affairs
+    cross_references:
+
+  ODOC:
+    longform:
+    description: Office of Departmental Operations and Coordination
+    cross_references:
+
+  ODAPC:
+    longform:
+    description: Office of Drug and Alcohol Policy and Compliance
+    cross_references:
+
+  OERI:
+    longform:
+    description: Office of Educational Research and Improvement
+    cross_references:
+
+  OESE:
+    longform:
+    description: Office of Elementary and Secondary Education
+    cross_references:
+
+  OEDCA:
+    longform:
+    description: Office of Employment Discrimination Complaint Adjudication
+    cross_references:
+
+  OELA:
+    longform:
+    description: Office of English Language Acquisition
+    cross_references:
+
+  OE:
+    longform:
+    description: Office of Ethics
+    cross_references:
+
+  OFCCP:
+    longform:
+    description: Office of Federal Contract Compliance Program
+    cross_references:
+
+  FPM:
+    longform:
+    description: Office of Field Policy and Management
+    cross_references:
+
+  OFAC:
+    longform:
+    description: Office of Foreign Assets Control
+    cross_references:
+
+  OGC:
+    longform:
+    description: Office of the General Counsel
+    cross_references:
+
+  OGA:
+    longform:
+    description: Office of Global Affairs
+    cross_references:
+
+  OGP:
+    longform:
+    description: Office of Government-wide Policy
+    cross_references:
+
+  OHA:
+    longform:
+    description: Office of Hearings and Appeals
+    cross_references:
+
+  HEP:
+    longform:
+    description: Office of Higher Education Programs
+    cross_references:
+
+  OHSEC:
+    longform:
+    description: Office of Homeland Security and Emergency Coordination
+    cross_references:
+
+  OHRM:
+    longform:
+    description: Office of Human Resources Management
+    cross_references:
+
+  OII:
+    longform:
+    description: Office of Innovation and Improvement
+    cross_references:
+
+  OIG:
+    longform:
+    description: Office of the Inspector General
+    cross_references:
+
+  I&A:
+    longform:
+    description: Office of Intelligence and Analysis
+    cross_references:
+
+  OJP:
+    longform:
+    description: Office of Justice Programs
+    cross_references:
+
+  OLMS:
+    longform:
+    description: Office of Labor-Management Standards
+    cross_references:
+
+  OLCA:
+    longform:
+    description: Office of Legislation and Congressional Affairs
+    cross_references:
+
+  OM:
+    longform:
+    description: Office of Management
+    cross_references:
+
+  OMHA:
+    longform:
+    description: Office of Medicare Hearings and Appeals
+    cross_references:
+
+  OMA:
+    longform:
+    description: Office of Mission Assurance
+    cross_references:
+
+  OO:
+    longform:
+    description: Office of Operations
+    cross_references:
+
+  OPEPD:
+    longform:
+    description: Office of Planning, Evaluation and Policy Development
+    cross_references:
+
+  OPE:
+    longform:
+    description: Office of Postsecondary Education
+    cross_references:
+
+  OPPM:
+    longform:
+    description: Office of Procurement and Property Management
+    cross_references:
+
+  OPO:
+    longform:
+    description: Office of Procurement Operations
+    cross_references:
+
+  OPA:
+    longform:
+    description: Office of Public Affairs
+    cross_references:
+
+  OPHS:
+    longform:
+    description: Office of Public Health and Science
+    cross_references:
+
+  OSTP:
+    longform:
+    description: Office of Science and Technology Policy
+    cross_references:
+
+  OSS:
+    longform:
+    description: Office of Security Services
+    cross_references:
+
+  OSDBU:
+    longform:
+    description: Office of Small and Disadvantaged Business Utilization
+    cross_references:
+
+  OSBU:
+    longform:
+    description: Office of Small Business Utilization
+    cross_references:
+
+  OSERS:
+    longform:
+    description: Office of Special Education and Rehabilitative Services
+    cross_references:
+
+  OSEP:
+    longform:
+    description: Office of Special Education Programs
+    cross_references:
+
+  OSPM:
+    longform:
+    description: Office of Strategic Planning and Management
+    cross_references:
+
+  OSMRE:
+    longform:
+    description: Office of Surface Mining, Reclamation and Enforcement
+    cross_references:
+
+  ACMD:
+    longform:
+    description: Office of the Administrator
+    cross_references:
+
+  ASA:
+    longform:
+    description: Office of the Assistant Secretary for Administration
+    cross_references:
+
+  ASFR:
+    longform:
+    description: Office of the Assistant Secretary for Financial Resources
+    cross_references:
+
+  OCHCO:
+    longform:
+    description: Office of the Chief Human Capital Officer
+    cross_references:
+
+  OCIO:
+    longform:
+    description: Office of the Chief Information Officer
+    cross_references:
+
+  OCC:
+    longform:
+    description: Office of the Comptroller of the Currency
+    cross_references:
+
+  IDCA:
+    longform:
+    description: Office of the Director, IDCA
+    cross_references:
+
+  IG:
+    longform:
+    description: Office of the Inspector General
+    cross_references:
+
+  TIGTA:
+    longform:
+    description: Office of the Inspector General for Tax Administration
+    cross_references:
+
+  OJO:
+    longform:
+    description: Office of the Judicial Officer
+    cross_references:
+
+  ONC:
+    longform:
+    description: Office of the National Coordinator for Health Information Technology
+    cross_references:
+
+  ONDCP:
+    longform:
+    description: Office of the National Drug Control Policy
+    cross_references:
+
+  OSA:
+    longform:
+    description: Office of the Secretary of the Army
+    cross_references:
+
+  SOL:
+    longform:
+    description: Office of the Solicitor
+    cross_references:
+
+  USTR:
+    longform:
+    description: Office of the United States Trade Representative
+    cross_references:
+
+  VPOTUS:
+    longform:
+    description: Office of the Vice President of the United States
+    cross_references:
+
+  OTS:
+    longform:
+    description: Office of Thrift Supervision
+    cross_references:
+
+  OWCP:
+    longform:
+    description: Office of Workers Compensation Program
+    cross_references:
+
+  OECD:
+    longform:
+    description: Organization for Economic Cooperation and Development
+    cross_references:
+
+  PACAF:
+    longform:
+    description: Pacific Air Forces
+    cross_references:
+
+  PNNL:
+    longform:
+    description: Pacific Northwest Site Office
+    cross_references:
+
+  PSC:
+    longform:
+    description: Program Support Center
+    cross_references:
+
+  PSA:
+    longform:
+    description: Pretrial Services Agency
+    cross_references:
+
+  PAHO:
+    longform:
+    description: Pan-American Health Organization
+    cross_references:
+
+  PAIGH:
+    longform:
+    description: Pan-American Institute of Geography and History
+    cross_references:
+
+  PARCA:
+    longform:
+    description: Pan-American Railway Congress Association
+    cross_references:
+
+  PC:
+    longform:
+    description: Peace Corps
+    cross_references:
+
+  PBGC:
+    longform:
+    description: Pension Benefit Guaranty Corporation
+    cross_references:
+
+  PIANC:
+    longform:
+    description: Permanent International Association of Navigation Congresses
+    cross_references:
+
+  PIARC:
+    longform:
+    description: Permanent International Association of Road Congresses
+    cross_references:
+
+  PHMSA:
+    longform:
+    description: Pipeline and Hazardous Materials Safety Administration
+    cross_references:
+
+  PACC:
+    longform:
+    description: Policy, Analysis, and Coordination Center
+    cross_references:
+
+  PRC:
+    longform:
+    description: Postal Rate Commission
+    cross_references:
+
+  UPAEP:
+    longform:
+    description: Postal Union of the Americas and Spain and Portugal
+    cross_references:
+
+  PMA:
+    longform:
+    description: Power Marketing Administration
+    cross_references:
+
+  POTUS:
+    longform:
+    description: President of the United States
+    cross_references:
+
+  PT:
+    longform:
+    description: Presidio Trust
+    cross_references:
+
+  PPPL:
+    longform:
+    description: Princeton Site Office
+    cross_references:
+
+  PBS:
+    longform:
+    description: Public Buildings Service
+    cross_references:
+
+  USPHS:
+    longform:
+    description: Public Health Service
+    cross_references:
+
+  RSA:
+    longform:
+    description: Rehabilitative Services Administration
+    cross_references:
+
+  RITA:
+    longform:
+    description: Research and Innovative Technology Administration
+    cross_references:
+
+  RMA:
+    longform:
+    description: Risk Management Agency
+    cross_references:
+
+  RBS:
+    longform:
+    description: Rural Business Cooperative Service
+    cross_references:
+
+  REA:
+    longform:
+    description: Rural Electrification Administration
+    cross_references:
+
+  RHS:
+    longform:
+    description: Rural Housing Service
+    cross_references:
+
+  RTB:
+    longform:
+    description: Rural Telephone Bank
+    cross_references:
+
+  RUS:
+    longform:
+    description: Rural Utilities Service
+    cross_references:
+
+  SLSDC:
+    longform:
+    description: Saint Lawrence Seaway Development Corporation
+    cross_references:
+
+  ISE:
+    longform:
+    description: Science and Education
+    cross_references:
+
+  SPC:
+    longform:
+    description: Secretariat of the Pacific Community
+    cross_references:
+
+  SCS:
+    longform:
+    description: Soil Conservation Service
+    cross_references:
+
+  SEPA:
+    longform:
+    description: Southeastern Power Marketing Administration
+    cross_references:
+
+  SWPA:
+    longform:
+    description: Southwestern Power Marketing Administration
+    cross_references:
+
+  SIGPR:
+    longform:
+    description: Special Inspector General for Pandemic Recovery
+    cross_references:
+
+  SIGTARP:
+    longform:
+    description: Special Inspector General for the Troubled Asset Relief Program
+        (TARP)
+    cross_references:
+
+  SLAC:
+    longform:
+    description: Stanford Site Office
+    cross_references:
+
+  SSC:
+    longform:
+    description: U.S. Army Soldiers System Command
+    cross_references:
+
+  SPR:
+    longform:
+    description: Strategic Petroleum Reserves
+    cross_references:
+
+  SALLIE MAE:
+    longform:
+    description: Student Loan Marketing Association
+    cross_references:
+
+  SAMHSA:
+    longform:
+    description: Substance Abuse and Mental Health Services Administration
+    cross_references:
+
+  SCOTUS:
+    longform:
+    description: Supreme Court of the United States
+    cross_references:
+
+  TA:
+    longform:
+    description: Technology Administration
+    cross_references:
+
+  TTS:
+    longform:
+    description: Technology Transformation Service
+    cross_references:
+
+  SAA:
+    longform:
+    description: The United States Senate Sergeant at Arms
+    cross_references:
+
+  TJNAF:
+    longform:
+    description: Thomas Jefferson Site Office
+    cross_references:
+
+  TSA:
+    longform:
+    description: Transportation Security Administration
+    cross_references:
+
+  USUHS:
+    longform:
+    description: Uniformed Services University of the Health Sciences
+    cross_references:
+
+  UN:
+    longform:
+    description: United Nations (and Special Programs)
+    cross_references:
+
+  UNIDO:
+    longform:
+    description: United Nations Industrial Development Organization
+    cross_references:
+
+  USIA:
+    longform:
+    description: United States Information Agency
+    cross_references:
+
+  USMINT:
+    longform:
+    description: United States Mint
+    cross_references:
+
+  USSC:
+    longform:
+    description: United States Sentencing Commission
+    cross_references:
+
+  USTDA:
+    longform:
+    description: United States Trade and Development Agency
+    cross_references:
+
+  UPU:
+    longform:
+    description: Universal Postal Union
+    cross_references:
+
+  ACPD:
+    longform:
+    description: U.S. Advisory Commission on Public Diplomacy
+    cross_references:
+
+  BECC:
+    longform:
+    description: U.S. and Canada Border Environment Cooperation Commission
+    cross_references:
+
+  IJC:
+    longform:
+    description: U.S. and Canada International Joint Commission
+    cross_references:
+
+  CMA:
+    longform:
+    description: U.S. Army Chemical Materials Command
+    cross_references:
+
+  TACOM:
+    longform:
+    description: U.S. Army Tank-automotive. and Armaments Command
+    cross_references:
+
+  USBM:
+    longform:
+    description: U.S. Bureau of Mines
+    cross_references:
+
+  USCIS:
+    longform:
+    description: U.S. Citizenship and Immigration Services
+    cross_references:
+
+  USCG:
+    longform:
+    description: U.S. Coast Guard
+    cross_references:
+
+  CAFC:
+    longform:
+    description: U.S. Court of Appeals for the Federal Circuit
+    cross_references:
+
+  CFC:
+    longform:
+    description: U.S. Court of Federal Claims
+    cross_references:
+
+  USCIT:
+    longform:
+    description: U.S. Court of International Trade
+    cross_references:
+
+  CBP:
+    longform:
+    description: U.S. Customs and Border Protection
+    cross_references:
+
+  USCYBERCOM:
+    longform:
+    description: U.S. Cyber Command
+    cross_references:
+
+  USFWS:
+    longform:
+    description: U.S. Fish and Wildlife Service
+    cross_references:
+
+  USGS:
+    longform:
+    description: U.S. Geological Survey
+    cross_references:
+
+  ICE:
+    longform:
+    description: U.S. Immigration and Customs Enforcement
+    cross_references:
+
+  JPML:
+    longform:
+    description: U.S. Judicial Panel on Multidistrict Litigation
+    cross_references:
+
+  USPTO:
+    longform:
+    description: U.S. Patent and Trademark Office
+    cross_references:
+
+  USSS:
+    longform:
+    description: U.S. Secret Service
+    cross_references:
+
+  USSOCOM:
+    longform:
+    description: U.S. Special Operations Command
+    cross_references:
+
+  AFSOC:
+    longform:
+    description: U.S. Special Operations Command (Air Force)
+    cross_references:
+
+  USTTA:
+    longform:
+    description: U.S. Travel and Tourism Administration
+    cross_references:
+
+  UST:
+    longform:
+    description: U.S. Trustee System
+    cross_references:
+
+  URMCC:
+    longform:
+    description: Utah Reclamation Mitigation and Conservation Commission
+    cross_references:
+
+  VETS:
+    longform:
+    description: Veterans Employment and Training Services
+    cross_references:
+
+  WHD:
+    longform:
+    description: Wage and Hour Division
+    cross_references:
+
+  WHS:
+    longform:
+    description: Washington Headquarters Services
+    cross_references:
+
+  WAPA:
+    longform:
+    description: Western Area Power Marketing Administration
+    cross_references:
+
+  WB:
+    longform:
+    description: Women's Bureau
+    cross_references:
+
+  WILSON CENTER:
+    longform:
+    description: Woodrow Wilson International Center for Scholars
+    cross_references:
+
+  WCO:
+    longform:
+    description: World Customs Organization
+    cross_references:
+
+  WHO:
+    longform:
+    description: World Health Organization
+    cross_references:
+
+  WIPO:
+    longform:
+    description: World Intellectual Property Organization
+    cross_references:
+
+  WMO:
+    longform:
+    description: World Meteorological Organization
+    cross_references:
+
+  UNWTO:
+    longform:
+    description: World Tourism Organization
+    cross_references:
+

@@ -1,0 +1,32 @@
+glossary:
+
+  COO:
+    longform:
+    description: |
+      Chief Operating Officer
+    cross_references:
+
+  CTO:
+    longform:
+    description: |
+      Chief Technology Officer
+    cross_references:
+
+  HCD:
+    longform:
+    description:
+      Human-centered Design
+    cross_references:
+
+  OCI:
+    longform: Organizational Conflict of interest
+    description: |
+      'Organizational conflict of interest means that, because of other activities or relationships with  other persons, a person is unable, or potentially unable, to render impartial assistance or advice  to the Government, or the person''s objectivity in performing the contract work is or might be  otherwise impaired, or a person has an unfair competitive advantage.'
+    cross_references:
+
+  UX:
+    longform:
+    description:
+      User Experience
+    cross_references:
+
