@@ -1,9 +1,5 @@
 from bs4 import BeautifulSoup
-import httpx
-import json
-import os
-import random
-import re
+import httpx, json, os, random, re
 
 with open(
     os.path.join(

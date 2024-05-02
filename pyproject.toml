@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "procurement-tools"
-version = "0.2.2"
+version = "0.3.0"
 description = "Python tools for navigating federal contracting"
-authors = ["V. David Zvenyach <dave@tandemgov.com>"]
+authors = ["V. David Zvenyach <dave@tandemgov.com>", "Jonathan \"Yoni\" Knoll <yoni@tandemgov.com>"]
 readme = "README.md"
 license = "Apache-2.0"
 keywords = ["packaging", "poetry"]
