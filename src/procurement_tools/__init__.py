@@ -8,8 +8,6 @@ from .glossary import Glossary
 from .socioeconomic import Socioeconomic
 from .translations import interpret_reason_for_modification
 
-Glossary()
-
 __all__ = [
     "FAR",
     "Glossary",
@@ -21,4 +19,3 @@ __all__ = [
     "USASpending",
     "interpret_reason_for_modification",
 ]
-3
